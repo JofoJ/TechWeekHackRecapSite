@@ -15,6 +15,8 @@ for (const requiredText of [
   "Antler Agents Track",
   "Rho Fintech Track",
   "AutoHDR Image Models & Pipelines Track",
+  "Community Choice",
+  "Kestrel",
 ]) {
   assert.ok(appSource.includes(requiredText), `missing homepage copy: ${requiredText}`);
 }

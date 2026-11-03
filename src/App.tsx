@@ -44,6 +44,10 @@ const winningBuilds = [
     track: "AutoHDR Image Models & Pipelines Track",
     name: "ShootAgent",
   },
+  {
+    track: "Community Choice",
+    name: "Kestrel",
+  },
 ]
   .map((winner) => {
     const submission = data.find((entry) => entry.name === winner.name);
@@ -71,7 +75,7 @@ const sponsors: Sponsor[] = [
   },
   {
     name: "Rho",
-    logo: "/sponsors/rho.svg",
+    logo: "/sponsors/rho.png",
     description:
       "Rho is the all-in-one financial platform for startups: business banking, corporate cards, expense management, and automated AP. Rho sponsored the Fintech track, challenging teams to build on real financial workflows.",
     cta: { label: "rho.co", href: "https://www.rho.co" },
@@ -103,7 +107,7 @@ const sponsors: Sponsor[] = [
   },
   {
     name: "Hook 'em Hacks",
-    logo: "/sponsors/hookem-hacks.svg",
+    logo: "/sponsors/hookem-hacks.png",
     description:
       "Hook 'em Hacks brings UT Austin student builders into the Austin hackathon scene, helping the next generation of engineers ship their first real projects.",
   },
@@ -253,7 +257,7 @@ function App() {
       <section className="featured" id="featured" aria-labelledby="featured-heading">
         <div className="section-heading">
           <p className="eyebrow">Winning Builds</p>
-          <h2 id="featured-heading">Track winners from the Hack Fair</h2>
+          <h2 id="featured-heading">Winners from the Hack Fair</h2>
         </div>
         <div className="featured-grid">
           {winningBuilds.map((winner, index) => (
