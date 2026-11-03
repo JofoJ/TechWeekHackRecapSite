@@ -5,7 +5,9 @@ import assert from "node:assert/strict";
 const appSource = await readFile(resolve("src/App.tsx"), "utf8");
 
 for (const requiredText of [
-  "MLOps World Tech Week Hackathon Showcase",
+  "/brand/aitx.png",
+  "/brand/mlops-world.png",
+  "Community Hackathon @ Austin Tech Week",
   "Sponsored Tracks",
   "Days of Building",
   "Winning Builds",

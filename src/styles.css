@@ -21,8 +21,8 @@ body {
   margin: 0;
   min-width: 320px;
   background:
-    radial-gradient(circle at 12% 0%, rgba(31, 111, 235, 0.34), transparent 30rem),
-    radial-gradient(circle at 88% 4%, rgba(242, 142, 43, 0.22), transparent 28rem),
+    radial-gradient(circle at 12% 0%, rgba(254, 73, 82, 0.2), transparent 30rem),
+    radial-gradient(circle at 88% 4%, rgba(255, 102, 0, 0.22), transparent 28rem),
     linear-gradient(180deg, #090b10 0%, #10131a 47%, #f4f0e8 47%, #f4f0e8 100%);
 }
 
@@ -43,6 +43,15 @@ main {
 .hero {
   min-height: 94vh;
   padding: 28px clamp(20px, 5vw, 72px) 54px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(4, 8, 16, 0.78) 0%,
+      rgba(4, 8, 16, 0.6) 42%,
+      rgba(8, 10, 15, 0.82) 78%,
+      #10131a 100%
+    ),
+    url("/brand/hero-skyline.jpg") center 65% / cover no-repeat #080a0f;
 }
 
 .topbar,
@@ -55,6 +64,7 @@ main {
 
 .topbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
@@ -75,6 +85,45 @@ main {
   gap: 12px;
   color: #dce7f7;
   font-weight: 760;
+}
+
+.brand-aitx {
+  height: 24px;
+  display: block;
+}
+
+.brand-amp {
+  color: #f7f8fb;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mlops-badge {
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #fe4952;
+}
+
+.mlops-badge img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.mlops-text {
+  padding: 4px 9px;
+  border-radius: 8px;
+  background: #fe4952;
+  color: #ffffff;
+  font-family: "SF Mono", ui-monospace, Menlo, monospace;
+  font-size: 10px;
+  line-height: 1.3;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .brand-mark {
@@ -105,7 +154,7 @@ main {
 
 .eyebrow {
   margin: 0 0 12px;
-  color: #f28e2b;
+  color: #ff7a29;
   font-size: 12px;
   font-weight: 820;
   letter-spacing: 0;

@@ -175,8 +175,19 @@ function App() {
     <main>
       <section className="hero">
         <nav className="topbar" aria-label="Site">
-          <div className="brand">
-            <span>AITX&lt;&gt;MLOps World Tech Week Hackathon Showcase</span>
+          <div className="brand" aria-label="AITX and MLOps World GenAI Summit">
+            <img alt="AITX" className="brand-aitx" src="/brand/aitx.png" />
+            <span aria-hidden="true" className="brand-amp">
+              &amp;
+            </span>
+            <span aria-hidden="true" className="mlops-badge">
+              <img alt="" src="/brand/mlops-world.png" />
+            </span>
+            <span className="mlops-text">
+              MLOps World
+              <br />
+              GenAI Summit
+            </span>
           </div>
           <a className="nav-link" href="#gallery">
             View builds
@@ -186,7 +197,7 @@ function App() {
 
         <div className="hero-grid">
           <div className="hero-copy">
-            <p className="eyebrow">Community Hackathon Showcase</p>
+            <p className="eyebrow">Community Hackathon @ Austin Tech Week</p>
             <h1>Austin builders spent Tech Week shipping real products.</h1>
             <p className="hero-lede">
               AITX teamed up with MLOps World | GenAI Summit for a week-long
