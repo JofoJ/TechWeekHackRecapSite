@@ -201,9 +201,11 @@ function App() {
             <h1>Austin builders spent Tech Week shipping real products.</h1>
             <p className="hero-lede">
               AITX teamed up with MLOps World | GenAI Summit for a week-long
-              hackathon during Austin Tech Week — kicking off at Antler VC,
-              building across the week, and demoing at a science-fair-style Hack
-              Fair in front of judges and the Austin AI community.
+              hackathon during Austin Tech Week. For an entire week, hackers
+              built across 3 tracks (Antler Agents, AutoHDR Image Models &amp;
+              Pipelines, and Rho Fintech), culminating in live demoes at a
+              science-fair-style &quot;Hack Fair&quot; in front of judges and
+              the Austin AI community. Check out their projects below!
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="#gallery">
@@ -216,20 +218,6 @@ function App() {
             </div>
           </div>
 
-          <aside className="hero-panel" aria-label="Hackathon statistics">
-            <div>
-              <span className="panel-label">Submissions</span>
-              <strong>{data.length}</strong>
-            </div>
-            <div>
-              <span className="panel-label">Sponsored Tracks</span>
-              <strong>3</strong>
-            </div>
-            <div>
-              <span className="panel-label">Days of Building</span>
-              <strong>5</strong>
-            </div>
-          </aside>
         </div>
       </section>
 

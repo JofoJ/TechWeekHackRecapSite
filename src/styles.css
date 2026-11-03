@@ -146,9 +146,7 @@ main {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(300px, 0.85fr);
-  gap: clamp(28px, 5vw, 72px);
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr);
   padding-top: clamp(70px, 12vh, 132px);
 }
 
