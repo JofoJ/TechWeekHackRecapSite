@@ -105,12 +105,6 @@ const sponsors: Sponsor[] = [
       href: "https://www.atlassian.com/software/startups",
     },
   },
-  {
-    name: "Hook 'em Hacks",
-    logo: "/sponsors/hookem-hacks.png",
-    description:
-      "Hook 'em Hacks brings UT Austin student builders into the Austin hackathon scene, helping the next generation of engineers ship their first real projects.",
-  },
 ];
 
 function shortDescription(value: string, maxLength = 245) {
@@ -200,10 +194,10 @@ function App() {
             <p className="eyebrow">Community Hackathon @ Austin Tech Week</p>
             <h1>Austin builders spent Tech Week shipping real products.</h1>
             <p className="hero-lede">
-              AITX teamed up with MLOps World | GenAI Summit for a week-long
-              hackathon during Austin Tech Week. For an entire week, hackers
-              built across 3 tracks (Antler Agents, AutoHDR Image Models &amp;
-              Pipelines, and Rho Fintech), culminating in live demoes at a
+              AITX teamed up with MLOps World | GenAI Summit for a hackathon
+              during Austin Tech Week. Throughout the entire week, hackers built
+              across the Antler Agents, AutoHDR Image Models &amp; Pipelines,
+              and Rho Fintech tracks, culminating in live demoes at a
               science-fair-style &quot;Hack Fair&quot; in front of judges and
               the Austin AI community. Check out their projects below!
             </p>
