@@ -39,18 +39,28 @@ for (const [submissionIndex, submission] of submissions.entries()) {
   }
 }
 
-const reelStudio = submissions.find((submission) => submission.name === "ReelStudio");
-assert.ok(reelStudio, "ReelStudio should be present");
-assert.equal(reelStudio.attendees.length, 3, "ReelStudio should list three attendees");
+const kestrel = submissions.find((submission) => submission.name === "Kestrel");
+assert.ok(kestrel, "Kestrel should be present");
+assert.equal(kestrel.attendees.length, 4, "Kestrel should list four attendees");
 
-const txMoney = submissions.find(
-  (submission) => submission.name === "TxMoney - Follow the Money",
+const paymentIntelligence = submissions.find(
+  (submission) => submission.name === "Payment Intelligence",
 );
-assert.ok(txMoney, "TxMoney should be present");
+assert.ok(paymentIntelligence, "Payment Intelligence should be present");
 assert.equal(
-  txMoney.attendees.find((attendee) => attendee.name === "Alex Hurley")?.linkedin,
-  "https://www.linkedin.com/in/alexander-hurley1258/",
-  "Hyphenated LinkedIn profile slugs should not be truncated",
+  paymentIntelligence.attendees.find((attendee) => attendee.name === "Rajat Rao")
+    ?.linkedin,
+  "https://www.linkedin.com/in/rajatsrao/",
+  "A LinkedIn URL on its own line should attach to the attendee above it",
 );
+
+const shootAgent = submissions.find((submission) => submission.name === "ShootAgent");
+assert.ok(shootAgent, "ShootAgent should be present");
+for (const attendee of shootAgent.attendees) {
+  assert.ok(
+    !/linkedin\.com\/in\/(a16z|open-?ai)\//i.test(attendee.linkedin || ""),
+    "placeholder LinkedIn slugs should be stripped",
+  );
+}
 
 console.log(`Public team data check passed for ${submissions.length} submissions.`);

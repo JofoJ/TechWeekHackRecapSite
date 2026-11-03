@@ -6,10 +6,8 @@ import {
   Play,
   Search,
   Sparkles,
-  Trophy,
-  X,
 } from "lucide-react";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import submissions from "./data/submissions.json";
 
 type Submission = {
@@ -26,29 +24,25 @@ type Submission = {
     linkedin: string;
   }>;
   githubRepo: string;
-  bounties: string[];
   showcaseWorthy: string;
 };
 
 const data = submissions as Submission[];
 const SHOW_GITHUB_LINKS = false;
-const trackFilters = ["Agents", "AutoHDR", "Open Data"];
-const bountyFilters = Array.from(
-  new Set(data.flatMap((submission) => submission.bounties)),
-).sort((a, b) => a.localeCompare(b));
-const filters = ["All", ...trackFilters, "Bounties", ...bountyFilters];
+const trackFilters = ["Antler Agents", "Rho Fintech", "AutoHDR"];
+const filters = ["All", ...trackFilters];
 const winningBuilds = [
   {
-    track: "Agents Track",
-    name: "Manifold - Natural Language Space Mission Designer",
+    track: "Antler Agents Track",
+    name: "Ocypod",
   },
   {
-    track: "AutoHDR Photo-to-Video Track",
-    name: "OBJECT ORIENTED VIDEOGRAPHY",
+    track: "Rho Fintech Track",
+    name: "Payment Intelligence",
   },
   {
-    track: "BrainForge & Vicinity Texas Open Data Track",
-    name: "TxMoney - Follow the Money",
+    track: "AutoHDR Image Models & Pipelines Track",
+    name: "ShootAgent",
   },
 ]
   .map((winner) => {
@@ -72,23 +66,29 @@ const sponsors: Sponsor[] = [
     name: "Antler",
     logo: "/sponsors/antler.svg",
     description:
-      "Antler is a pre-seed fund, the first believer at inception stage, investing $600K as your first institutional check.",
+      "Antler is a pre-seed fund, the first believer at inception stage, investing $600K as your first institutional check. Antler hosted the hackathon and sponsored the Agents track.",
     cta: { label: "Apply to a residency", href: "https://to.antler.co/AITX" },
   },
   {
-    name: "Miro",
-    logo: "/sponsors/miro.svg",
-    logoTheme: "dark",
+    name: "Rho",
+    logo: "/sponsors/rho.svg",
     description:
-      "The AI-powered visual workspace for innovation. Teams use Miro's intelligent canvas, AI workflows, and deep integrations like Miro MCP with Codex, Claude, and other AI tooling to collaborate across the full product lifecycle.",
-    cta: { label: "miro.com", href: "https://miro.com" },
+      "Rho is the all-in-one financial platform for startups: business banking, corporate cards, expense management, and automated AP. Rho sponsored the Fintech track, challenging teams to build on real financial workflows.",
+    cta: { label: "rho.co", href: "https://www.rho.co" },
   },
   {
     name: "AutoHDR",
     logo: "/sponsors/autohdr.svg",
     description:
-      "AutoHDR edits 1 in 10 U.S. real estate listings using AI. They scaled from $0 to $8M ARR in under a year and are hiring builders with creativity, grit, and a willingness to ship.",
+      "AutoHDR edits 1 in 10 U.S. real estate listings using AI. They scaled from $0 to $8M ARR in under a year, sponsored the Image Models & Pipelines track, and are hiring builders with creativity, grit, and a willingness to ship.",
     cta: { label: "autohdr.com", href: "https://www.autohdr.com/" },
+  },
+  {
+    name: "Supabase",
+    logo: "/sponsors/supabase.svg",
+    description:
+      "Supabase is the open source Postgres development platform — database, auth, storage, and realtime APIs that let builders ship production apps in a weekend.",
+    cta: { label: "supabase.com", href: "https://supabase.com" },
   },
   {
     name: "Atlassian for Startups",
@@ -102,11 +102,10 @@ const sponsors: Sponsor[] = [
     },
   },
   {
-    name: "BrainForge",
-    logo: "/sponsors/brainforge.svg",
+    name: "Hook 'em Hacks",
+    logo: "/sponsors/hookem-hacks.svg",
     description:
-      "Brainforge is an embedded data and AI team that builds governed company brain systems — turning behavior, documents, and stack sprawl into assistants, automations, and agents teams actually use.",
-    cta: { label: "Learn more", href: "https://brainforge.ai" },
+      "Hook 'em Hacks brings UT Austin student builders into the Austin hackathon scene, helping the next generation of engineers ship their first real projects.",
   },
 ];
 
@@ -117,7 +116,6 @@ function shortDescription(value: string, maxLength = 245) {
 
 function scoreForFeature(submission: Submission) {
   return (
-    submission.bounties.length * 18 +
     submission.tracks.length * 8 +
     (submission.githubRepo ? 4 : 0) +
     (submission.demoVideo ? 4 : 0)
@@ -125,72 +123,15 @@ function scoreForFeature(submission: Submission) {
 }
 
 function trackTone(track: string) {
-  if (track === "Agents") return "tone-blue";
+  if (track === "Antler Agents") return "tone-blue";
   if (track === "AutoHDR") return "tone-amber";
-  if (track === "Open Data") return "tone-green";
+  if (track === "Rho Fintech") return "tone-green";
   return "tone-neutral";
 }
 
 function matchesFilter(submission: Submission, filter: string) {
   if (filter === "All") return true;
-  if (filter === "Bounties") return submission.bounties.length > 0;
-  if (bountyFilters.includes(filter)) return submission.bounties.includes(filter);
   return submission.tracks.includes(filter);
-}
-
-function HeroVideo() {
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [inView, setInView] = useState(true);
-  const [engaged, setEngaged] = useState(false);
-  const [dockClosed, setDockClosed] = useState(false);
-
-  useEffect(() => {
-    const wrapper = wrapperRef.current;
-    if (!wrapper) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setInView(entry.isIntersecting);
-        if (entry.isIntersecting) setDockClosed(false);
-      },
-      { threshold: 0.3 },
-    );
-    observer.observe(wrapper);
-    return () => observer.disconnect();
-  }, []);
-
-  const floating = !inView && engaged && !dockClosed;
-
-  return (
-    <div className="hero-video" ref={wrapperRef}>
-      <div className={floating ? "video-shell floating" : "video-shell"}>
-        <video
-          ref={videoRef}
-          controls
-          playsInline
-          preload="metadata"
-          poster="/media/hackathon-hype-poster.jpg"
-          onPlay={() => setEngaged(true)}
-          onEnded={() => setEngaged(false)}
-        >
-          <source src="/media/hackathon-hype.mp4" type="video/mp4" />
-        </video>
-        {floating ? (
-          <button
-            aria-label="Close mini player"
-            className="video-dock-close"
-            onClick={() => {
-              videoRef.current?.pause();
-              setDockClosed(true);
-            }}
-            type="button"
-          >
-            <X size={16} />
-          </button>
-        ) : null}
-      </div>
-    </div>
-  );
 }
 
 function App() {
@@ -215,7 +156,6 @@ function App() {
           submission.description,
           submission.attendees.map((attendee) => attendee.name).join(" "),
           submission.tracks.join(" "),
-          submission.bounties.join(" "),
         ]
           .join(" ")
           .toLowerCase()
@@ -224,13 +164,15 @@ function App() {
       .sort((a, b) => scoreForFeature(b) - scoreForFeature(a));
   }, [activeFilter, query]);
 
-  const bountyBuilds = data.filter((submission) => submission.bounties.length > 0).length;
+  const multiTrackBuilds = data.filter(
+    (submission) => submission.tracks.length > 1,
+  ).length;
   return (
     <main>
       <section className="hero">
         <nav className="topbar" aria-label="Site">
           <div className="brand">
-            <span>AITX&lt;&gt;Codex Community Hackathon Showcase</span>
+            <span>AITX&lt;&gt;MLOps World Tech Week Hackathon Showcase</span>
           </div>
           <a className="nav-link" href="#gallery">
             View builds
@@ -241,11 +183,12 @@ function App() {
         <div className="hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Community Hackathon Showcase</p>
-            <h1>Austin builders spent 48 hours shipping real projects with Codex.</h1>
+            <h1>Austin builders spent Tech Week shipping real products.</h1>
             <p className="hero-lede">
-              AITX Community teamed up with Codex for a full weekend hackathon at
-              Antler VC, bringing engineers, founders, researchers, and AI explorers
-              together to build exciting technology with Codex.
+              AITX teamed up with MLOps World | GenAI Summit for a week-long
+              hackathon during Austin Tech Week — kicking off at Antler VC,
+              building across the week, and demoing at a science-fair-style Hack
+              Fair in front of judges and the Austin AI community.
             </p>
             <div className="hero-actions">
               <a className="primary-action" href="#gallery">
@@ -264,17 +207,15 @@ function App() {
               <strong>{data.length}</strong>
             </div>
             <div>
-              <span className="panel-label">Total Tokens Used</span>
-              <strong>4.66B</strong>
+              <span className="panel-label">Sponsored Tracks</span>
+              <strong>3</strong>
             </div>
             <div>
-              <span className="panel-label">Total Model Requests</span>
-              <strong>56,415</strong>
+              <span className="panel-label">Days of Building</span>
+              <strong>5</strong>
             </div>
           </aside>
         </div>
-
-        <HeroVideo />
       </section>
 
       <section className="sponsors" id="sponsors" aria-labelledby="sponsors-heading">
@@ -349,7 +290,7 @@ function App() {
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Search projects, teams, tracks, bounties..."
+              placeholder="Search projects, teams, tracks..."
               aria-label="Search submissions"
             />
           </div>
@@ -370,13 +311,13 @@ function App() {
 
         <div className="result-count">
           Showing {filtered.length} of {data.length} builds
-          <span>{bountyBuilds} bounty-tagged submissions</span>
+          <span>{multiTrackBuilds} builds entered multiple tracks</span>
         </div>
 
         {filtered.length === 0 ? (
           <div className="empty-state">
             <h3>No matching builds</h3>
-            <p>Try a different project name, team member, track, or bounty.</p>
+            <p>Try a different project name, team member, or track.</p>
           </div>
         ) : null}
 
@@ -403,12 +344,6 @@ function App() {
                       {track}
                     </span>
                   ))}
-                  {submission.bounties.length > 0 ? (
-                    <span className="badge tone-prize">
-                      <Trophy size={13} />
-                      Bounty
-                    </span>
-                  ) : null}
                 </div>
                 <h3>{submission.name}</h3>
                 <p>{description}</p>
@@ -557,13 +492,6 @@ function App() {
                     )}
                   </div>
                 </div>
-              ) : null}
-
-              {submission.bounties.length > 0 ? (
-                <p className="meta-line">
-                  <span>Bounties</span>
-                  {submission.bounties.join(", ")}
-                </p>
               ) : null}
 
               <div className="card-actions">

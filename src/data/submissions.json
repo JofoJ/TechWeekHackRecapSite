@@ -1,1208 +1,536 @@
 [
   {
-    "id": "reelstudio",
-    "name": "ReelStudio",
-    "description": "We built ReelStudio, an AI-powered cinematic reel studio for real estate. The problem is simple: real estate agents already have listing photos, but turning those photos into a polished, beat-synced video usually means hiring a videographer, coordinating drone footage, editing in Premiere or CapCut, and spending hundreds or thousands of dollars per listing. ReelStudio replaces that workflow with one upload. An agent drops in property photos, chooses music, reviews a customizable storyboard, and gets a professional 9:16 reel ready for Instagram, TikTok, MLS, or client marketing.",
-    "demoVideo": "https://www.loom.com/share/83c05706ee2c44048910847ed5ef2b2d",
-    "demoEmbedUrl": "https://www.loom.com/embed/83c05706ee2c44048910847ed5ef2b2d",
+    "id": "promptforce",
+    "name": "Promptforce",
+    "description": "Loupe takes low resolution frames and scales it to higher resolution image using a tiny trained model, it also provides per tile quality score so the small portion of image that's hard to scale can be scaled using higher parameter model giving latency/cost advantages. It is a 241 KB model (59k parameters) that runs on your own machine: no AI service, no per-photo fee, and no photo leaves the computer. A hosted service would cost 1$ per 1200 photos resized.",
+    "demoVideo": "https://www.loom.com/share/706b10eb05274273af728b8307523e9b",
+    "demoEmbedUrl": "https://www.loom.com/embed/706b10eb05274273af728b8307523e9b",
     "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/83c05706ee2c44048910847ed5ef2b2d-19a3b0568c8e8598.gif",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/706b10eb05274273af728b8307523e9b-ba79a5c1e583bb9a.gif",
+    "tracks": [
+      "AutoHDR"
+    ],
+    "attendees": [
+      {
+        "name": "Kunal Vasavada",
+        "linkedin": "https://linkedin.com/in/kunalvasavada/"
+      }
+    ],
+    "githubRepo": "https://github.com/PromptForcePrime/Loupe",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "co-create",
+    "name": "Co-create",
+    "description": "Cocreate: chat with an agent that edits a whole real-estate shoot, touches only what you asked for, proves it with a changed-pixel view, and recolours any wall in one click.",
+    "demoVideo": "https://www.loom.com/share/99f836d5b84a4b0eb9b0591ca72caf86",
+    "demoEmbedUrl": "https://www.loom.com/embed/99f836d5b84a4b0eb9b0591ca72caf86",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/99f836d5b84a4b0eb9b0591ca72caf86-9e3506a7d2680558.gif",
+    "tracks": [
+      "AutoHDR"
+    ],
+    "attendees": [
+      {
+        "name": "Rishikesh Reddy Aluguvelli",
+        "linkedin": "https://www.linkedin.com/in/rishikesh-aluguvelli/"
+      },
+      {
+        "name": "Sarath Chandra Gentela",
+        "linkedin": "https://www.linkedin.com/in/sarathgentela/"
+      }
+    ],
+    "githubRepo": "https://github.com/RishikeshAluguvelli/Cocreate",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "verbalore",
+    "name": "Verbalore",
+    "description": "A daily video plan for people who know they should be on camera and never find the time. Verbalore researches what your market is posting about, writes the script in your voice, prompts you while you record, and edits the video for you with a graphic on every scene. A second half of the product watches the accounts in your CRM and turns each buying signal into a personal video note. Ideas. Seven use-case tabs (real estate, software developers, product marketers, GTM executives, C-suite, founders, general). Each pulls what people are posting in that niche from Reddit, Hacker News, YouTube, TikTok, Instagram, LinkedIn and Facebook, scores every post against others on its own platform, drops off-topic ones, and writes five ideas. Each idea shows its evidence, one reference post picked by Jev with its hook / body / ending broken down, and a script in your voice. Daily email. A cron job queues the research each morning and a second one emails the five best ideas. Each has a button that opens the teleprompter. Studio. Camera preview, scrolling teleprompter (speed, size, mirror, pause on space), retake as often as you like, direct upload to storage. You can also upload an existing video. Record on your phone: the Studio shows a QR code. Scan it and the phone opens a full-screen recorder with the same teleprompter, no sign-in needed. When you press send, the take uploads straight to storage and appears in the desktop Studio on its own, ready to edit. The link is single-purpose, expires after two hours, and can only upload into its own folder. Edit. A worker normalises the take, gets word timings, cuts the transcript into scenes, and gives every scene a graphic: hook title, stat, list, quote, tip, code window, before/after, fact tiles, call to action. The scene plan is validated, so a scene can never ship without its graphic. Each use case offers its own edit themes (editorial, kinetic type, product UI, listing, terminal, boardroom). Library and posting. Preview, re-edit in another style, and post to up to 15 platforms through Upload-Post, now or scheduled. Signals. Watch any organization: add one, or paste a list of names and websites. For each one the engine reads the primary sources directly (SEC filings, the company's job board, its own website, GitHub) and also searches the news. Results are classified, de-duplicated, and ranked by fit and urgency, and each shows where it was found. You can also add a plain-language signal to watch (\"opened a new office\"). Pick a signal and a contact and it writes a 30 second note, you record it, and it goes out as a share page /v/<token> with view tracking. Brain. Notes, posts and pages you add. Scripts are written only from this, and a voice profile (tone, sentence length, repeated phrases) is learned from your own writing. A document can apply to everything or to one use-case tab, so real-estate notes never leak into developer content.",
+    "demoVideo": "https://www.loom.com/share/5675bf0823834d5e94dc8a3bc625dc60",
+    "demoEmbedUrl": "https://www.loom.com/embed/5675bf0823834d5e94dc8a3bc625dc60",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/5675bf0823834d5e94dc8a3bc625dc60-afb70e2a5776552a.gif",
     "tracks": [
       "AutoHDR",
-      "Agents"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "Saurav Rijal",
-        "linkedin": "https://www.linkedin.com/in/sauravrijal/"
-      },
-      {
-        "name": "Aaditya Baniya",
-        "linkedin": "https://www.linkedin.com/in/aadityabaniya/"
-      },
-      {
-        "name": "Shivendra Bhagat",
-        "linkedin": "https://www.linkedin.com/in/shivendrabhagat/"
+        "name": "Wali Ullah Khan",
+        "linkedin": ""
       }
     ],
-    "githubRepo": "https://github.com/AITX-codex-hackathon/Reel_Studio/tree/dev",
-    "bounties": [],
+    "githubRepo": "https://github.com/waliullah-khan/verbalore/blob/main/README.md",
     "showcaseWorthy": ""
   },
   {
-    "id": "txmoney-follow-the-money",
-    "name": "TxMoney - Follow the Money",
-    "description": "This is JMail for Texas politicians. Now you can follow the money trail. It's an AI agent that answers natural-language questions about campaign financing in Texas state and Austin city politics, every dollar amount linked to its source filing. The tool allows every day texans to perform investigative research into their representatives. https://follow-the-money-alpha.vercel.app",
-    "demoVideo": "https://www.loom.com/share/b8626666f5bb4733b8461ff7a1a09f3c",
-    "demoEmbedUrl": "https://www.loom.com/embed/b8626666f5bb4733b8461ff7a1a09f3c",
+    "id": "shootagent",
+    "name": "ShootAgent",
+    "description": "ShootAgent takes a home listing all the way from a camera's raw shots to polished marketing videos that realtors can trust and post on social media. We have created a custom agentic pipeline that gives truly creative capabilities to a crew of specialized reviewer agents that truly vets a video how a professional would, and catches mistakes made by AutoHDR. ShootAgent compares each scene with the original shots and fixes the mistakes. Realtors can interact with an AI via chat to make edits that would otherwise take postprocessing professionals hours to make, like \"remove the car,\" and we have created a verification loop that ensures accuracy from intent, and undoes any edit that fails its loop. It also checks everything in compliance! It then turns the approved photos into a narrated reel, with multilingual capabilities, so one listing reaches different audiences. For more creative reels, ten AI agents pitch, review and pick ideas, and 16 AI viewers and judges score the finished reels without knowing who made them.",
+    "demoVideo": "https://www.loom.com/share/6a25be5d53fd4257a11cd33498d7630f",
+    "demoEmbedUrl": "https://www.loom.com/embed/6a25be5d53fd4257a11cd33498d7630f",
     "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/b8626666f5bb4733b8461ff7a1a09f3c-ad854fcc644c4938.gif",
-    "tracks": [
-      "Open Data",
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Ion Petropoulos",
-        "linkedin": "https://www.linkedin.com/in/ionpetro/"
-      },
-      {
-        "name": "Alex Hurley",
-        "linkedin": "https://www.linkedin.com/in/alexander-hurley1258/"
-      },
-      {
-        "name": "Josh Noble",
-        "linkedin": "https://www.linkedin.com/in/josh-n-650238a1/"
-      }
-    ],
-    "githubRepo": "https://github.com/jnoble157/follow-the-money",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "autopostvisit",
-    "name": "AutoPostVisit",
-    "description": "AutoPostVisit turns a rushed clinical encounter into a personalized, nurse-reviewed post-visit discharge video. The demo follows Mateo Rivera, a 7-year-old Spanish-speaking child newly diagnosed with type 1 diabetes. The app reads a synthetic visit transcript, catches an easy-to-miss learning clue, matches it to a donated avatar/photo asset, generates Spanish child-facing dialogue, maps every claim back to evidence, and routes the final avatar video through Nurse Dana before it reaches Mateo’s mom.",
-    "demoVideo": "https://www.loom.com/share/918d1dcd1b194f7c82b43128cb1644e2",
-    "demoEmbedUrl": "https://www.loom.com/embed/918d1dcd1b194f7c82b43128cb1644e2",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/918d1dcd1b194f7c82b43128cb1644e2-4ea006adc6e042af.gif",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/6a25be5d53fd4257a11cd33498d7630f-a5d07809f15c2125.gif",
     "tracks": [
       "AutoHDR",
-      "Agents"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "John Lewis",
-        "linkedin": "https://www.linkedin.com/in/john-lewis-rn-221756b1/"
+        "name": "Sam Gu",
+        "linkedin": ""
+      },
+      {
+        "name": "Bryan Wang",
+        "linkedin": ""
+      },
+      {
+        "name": "Aiden Johnston",
+        "linkedin": "https://linkedin.com/in/aidenjohnston/"
       }
     ],
-    "githubRepo": "https://github.com/johnlewisiv/autopostvisit",
-    "bounties": [],
+    "githubRepo": "https://github.com/SamGu-NRX/shootagent",
     "showcaseWorthy": ""
   },
   {
-    "id": "bidhan-paudel-bishleshan-dahal-taketwo",
-    "name": "Bidhan Paudel, Bishleshan Dahal- TakeTwo",
-    "description": "TakeTwo is an AI-powered video editing pipeline designed to cure the headache of \"bad takes.\" We built a multi-agent system that automatically analyzes raw video and audio to detect awkward silences, stutters, and unusable frames. Instead of just cutting them out, our dual-agent architecture (an AI Critic and an AI Creator) collaborates to generate context-aware B-roll and seamless replacement clips. With a premium React frontend and a fast Flask/FFmpeg backend, creators can simply upload their footage, review AI-generated fixes, and export a flawless, stutter-free video in minutes.",
-    "demoVideo": "https://www.loom.com/share/1e6916db588e43c084e26da1300a66fb",
-    "demoEmbedUrl": "https://www.loom.com/embed/1e6916db588e43c084e26da1300a66fb",
+    "id": "buildwright",
+    "name": "BuildWright",
+    "description": "BuildWright Know what you can build on an Austin lot before you buy it. Inspiration First-time builders, such as a family adding a backyard home (ADU) or someone planning a small fourplex, usually find out what their lot allows after they've already paid for it. Zoning, floodplains, permit history and the city's filing rules are all public in Austin, but they're spread across a dozen city maps and process pages written for professionals. In one industry survey, 75% of project owners went over budget and 77% finished late. We wanted to give the beginner the same picture a developer's team would put together, in minutes, with a source for every fact. What it does 1. Start on the street. A 3D street scene shows a finished house next to one under construction. One scroll flies the camera overhead and hands off to a map of Austin. 2. Find a lot, two ways. - \"I have an address\": type any Austin address, typos included. BuildWright matches it to its county parcel. - \"Describe it\": type something like \"4 homes, avoid the floodplain\". BuildWright ranks candidate spots across Austin and shows them as numbered pins on the map. 3. Five AI agents research the lot, shown as a crew of characters: - Zoney: zoning and codes. - Levee: flood and hazards. - Stamp: permit history nearby. - Foreman: the filing path for your project. - Fern: creeks and trees. Each one ticks through the real city layers it read, for example \"FEMA flood zone: Hit (AE)\" or \"Building permits within 220 m: 4 found\", then writes a plain-language summary that links to its sources. 4. Get the answer and the next steps. - A verdict up front, such as \"A backyard ADU looks possible here, with a few checks first.\" - A step-by-step checklist that says why each step matters and links to the city source. - Local builders with photos, ratings and real reviews. - Pre-filled City of Austin permit forms to download. - An email and a phone call, drafted and sent only after you approve them. - Push back: say \"only 3 homes\" or \"avoid the floodplain\" and the research is redone. How we built it - Frontend: - Next.js 15, React 19 and TypeScript. - three.js, through React Three Fiber, for the 3D street. It's all built in code, with no model files. - MapLibre GL for the map. - A bold \"neobrutalist\" design system for the map and results pages. - Live city data: about 10 City of Austin ArcGIS layers queried in parallel for every lot: zoning, FEMA and city floodplains, building permits, wildfire areas, pipelines, the airport overlay, creek buffers and historic districts. - Address to parcel: the US Census geocoder, with Esri's World Geocoder as a fallback for misses and typos. The result is snapped to the Travis Central Appraisal District parcel, because geocoder points land on the street centerline and miss the zoning map. - AI agents: five Claude Haiku 5.5 calls run in parallel. Each sees only its own slice of the live facts and must answer in a fixed JSON format. Source links come from our code, not the model, so it can't invent a citation. If a call fails or takes longer than 12 seconds, that agent falls back to rule-written text built from the same facts. - Builders: Apify's Google Maps scraper finds 5 nearby builders, with photos, ratings and a real review. Results are cached, with a bundled fallback so the page never waits. - Documents and outreach: pdf-lib fills the permit forms. Resend or SMTP sends email and Twilio places calls. Both go only to approved recipients after an on-screen confirmation. - Art: the crew characters were generated with AI (in Figma) and animated with CSS. Tracks - AutoHDR: we built an image pipeline (lib/render.ts) that stitches the city aerial for the lot and corrects its tone and color. A version that places a 3D house on the lot is in progress, and its section on the results page is hidden until it's ready. - Antler: the buyer is the first-time builder, and the same flow screens lots for small developers. Austin is first; every city publishes the same kinds of map layers, so the agent pattern carries over. Possible revenue: a full permit-packet product, and referral fees from builders and surveyors. What's real and what isn't - Live: the city map data, the address-to-parcel match, the five AI agents, the builder lookup, and email and calls once keys are set. - The agent animation replays the exact layers each agent read after the research finishes. It isn't streamed live. - \"Describe it\" ranks a fixed set of Austin neighborhood points, not every parcel. - Permit forms are drafts, and nothing is submitted to the city. - There's no cost estimate or sale price yet. - Three demo addresses have saved city readings, used only if the city's servers are slow or down. - It's map research, not a zoning determination. Every finding links to its source so you can check it. Challenges we ran into - Geocoder points sit on the street centerline, outside every zoning polygon. That made real Austin addresses look like they were outside the city until we snapped them to the right parcel. - City servers can be slow, so we built fallbacks at every layer: per-agent template text, cached builders and saved demo readings. The demo never breaks. - Merging two teammates' apps (a 3D landing and a research pipeline) into one product on a hackathon clock. What's next - Real lot measurements: setbacks and how much can be built. - Cost estimates. - A check in code that every quoted fact appears in its source. - Hosting with a shared database. - Submitting to the city's permit system. - More cities. Built with Next.js, React, TypeScript, three.js, React Three Fiber, MapLibre GL, Claude Haiku 5.5 (Anthropic API), Apify, City of Austin ArcGIS, US Census Geocoder, Esri, Travis Central Appraisal District, pdf-lib, sharp, Resend, Twilio. Team Arpit Khavate and Fawaz Jamshed. Code: https://github.com/ArpitKhavate/Construction (branch combined-dev-v1)",
+    "demoVideo": "https://www.loom.com/share/47629981de9d48998b4a7059fe523e68",
+    "demoEmbedUrl": "https://www.loom.com/embed/47629981de9d48998b4a7059fe523e68",
     "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/1e6916db588e43c084e26da1300a66fb-c84c81311c856b02.gif",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/47629981de9d48998b4a7059fe523e68-4fe258f7fa9c1944.gif",
     "tracks": [
       "AutoHDR",
-      "Agents"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "Bishleashan Dahal",
-        "linkedin": "https://www.linkedin.com/in/bisdah/"
+        "name": "Fawaz Jamshed",
+        "linkedin": ""
       },
       {
-        "name": "Bidhan Paudel",
-        "linkedin": "https://www.linkedin.com/in/bidhan-paudel-7284162a7/"
+        "name": "Arpit Khavate",
+        "linkedin": ""
       }
     ],
-    "githubRepo": "https://github.com/AITX-codex-hackathon/TakeTwo",
-    "bounties": [
-      "DeepInvent Best Patentable Hack"
-    ],
+    "githubRepo": "https://github.com/ArpitKhavate/Construction",
     "showcaseWorthy": ""
   },
   {
-    "id": "geoclaw",
-    "name": "GeoClaw",
-    "description": "AI Datacenter Site Selection Tool",
-    "demoVideo": "https://www.loom.com/share/8d2d50c64cb84a4e97dd28e64c0cf234",
-    "demoEmbedUrl": "https://www.loom.com/embed/8d2d50c64cb84a4e97dd28e64c0cf234",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/8d2d50c64cb84a4e97dd28e64c0cf234-87eeae2c0a97cbd3.gif",
+    "id": "payment-intelligence",
+    "name": "Payment Intelligence",
+    "description": "Problem Finance teams lose money and hours to payment friction nobody owns. Disputed card charges need evidence dug out of inboxes and written up by hand. Cross-border payments get declined by SCA checks or eaten by FX and cross-border fees because they went through the wrong card. Usage-based bills like AWS or Meta Ads keep growing until they auto-debit, sometimes pushing an account below its cash buffer before anyone notices. Who it helps Controllers, treasury managers and AP teams at fast-growing companies that run several corporate cards, multiple bank accounts and many usage-based vendors. Solution Payment Intelligence is one dashboard with three AI modules. The Auto-Dispute Concierge matches invoices, receipts and photos to disputed transactions using EmbeddingGemma 2 vector search and Gemma 3 vision. It then writes a chargeback letter and assembles the evidence package PDF. The Card Optimizer uses a probabilistic decision model to pick the card that clears SCA declines and avoids FX markup for each cross-border payment. Liquidity Guard classifies each bill line as fixed or usage-based and run-rates the variable ones to flag spikes. It also forecasts a 30-day P10/P50/P90 cash corridor per account with Mistral’s Timestral and recommends a pre-emptive sweep before a breach. Every model answer is checked against a deterministic engine, so the AI never sets the money figures on its own. Impact Dispute packages that took hours are ready in minutes. Declined payments are recovered and avoidable fees are cut. Cash shortfalls show up days ahead with a sized fix, instead of after the bank alert.",
+    "demoVideo": "https://www.youtube.com/watch?v=bzPNRtc_JCA",
+    "demoEmbedUrl": "https://www.youtube.com/embed/bzPNRtc_JCA",
+    "demoProvider": "YouTube",
+    "demoThumbnailUrl": "https://i.ytimg.com/vi/bzPNRtc_JCA/hqdefault.jpg",
     "tracks": [
-      "Open Data"
+      "Rho Fintech"
     ],
     "attendees": [
       {
-        "name": "Vishal Porwal",
-        "linkedin": "https://linkedin.com/in/vishalporwal/"
-      },
-      {
-        "name": "Igor Okulist",
-        "linkedin": "https://www.linkedin.com/in/igor/"
-      },
-      {
-        "name": "Constantine Muernin",
-        "linkedin": "https://www.linkedin.com/in/mureninc/"
-      },
-      {
-        "name": "Jimmy Zhang",
-        "linkedin": "https://www.linkedin.com/in/imyjimmy/"
+        "name": "Rajat Rao",
+        "linkedin": "https://www.linkedin.com/in/rajatsrao/"
       }
     ],
-    "githubRepo": "https://github.com/imyjimmy/data-center-feasibility-app/",
-    "bounties": [
-      "DeepInvent Best Patentable Hack",
-      "Best use of Miro Bounty"
-    ],
+    "githubRepo": "https://github.com/rajatrao/payment_intelligence",
     "showcaseWorthy": ""
   },
   {
-    "id": "eterna-ai",
-    "name": "Eterna AI",
-    "description": "Visit our site to experience this for firsthand: https://eterna-id-2.vercel.app/auth Eterna is building an operating system for personalized peptide and longevity care. Today, people paying out of pocket for peptides are often left to manage complex protocols across scattered PDFs, texts, lab reports, wearable dashboards, and vague follow-up advice. They may know what they are taking, but they do not always know whether it is working, what changed in their biomarkers, when to adjust, or how their experience contributes to broader clinical evidence. Eterna helps high-intent wellness patients, peptide clinics, and research partners turn that fragmented care journey into a guided, measurable protocol experience. Patients onboard with goals, compounds, dosing, baseline symptoms, labs, and wearable data. The platform tracks daily check-ins, active protocols, biological age, biomarker trends, and recovery signals in one place. Its AI protocol coach interprets that context, explains why a recommendation is being made, cites the relevant source signal, and helps patients understand next steps while preserving human oversight. The impact is a clearer, safer, more valuable experience for patients and a richer real-world evidence layer for clinics and pharma. Eterna makes peptide care feel less like self-managed experimentation and more like a monitored, personalized health system.",
-    "demoVideo": "https://www.loom.com/share/9b9cf0ce2aef41f6808ba509a1f9b96e",
-    "demoEmbedUrl": "https://www.loom.com/embed/9b9cf0ce2aef41f6808ba509a1f9b96e",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/9b9cf0ce2aef41f6808ba509a1f9b96e-4f5056a6a9a86d6c.gif",
+    "id": "l1brary-labs-cadence-on-rho",
+    "name": "L1brary Labs - Cadence on Rho",
+    "description": "Cadence on Rho — Work today. Own your payday. Cadence on Rho is an earned-pay prototype that brings employer payroll oversight, worker earnings, and controlled payout requests into one workspace. Workers see earnings accrue every 15 seconds during recorded shifts and can request access to earned pay up to three times daily within a weekly or biweekly cycle. Employers review requests, track available earnings and reserved amounts, and follow each payout’s status. Uncertain outcomes keep funds reserved, helping prevent duplicate payouts. The hackathon build adds this workflow to Cadence’s existing RLUSD payment engine, which supports wallet approval, durable payment records, and transaction reconciliation on XRP Ledger. The submitted demo uses simulated settlements. Rho staging access and test funding have been verified separately; connecting business funding checks, approved USD payouts, and bank reconciliation is the next integration step. The current prototype models one worker using browser-local records, with an illustrative payroll hold rather than calculated taxes. Cadence’s goal is to give workers greater flexibility over earned pay while keeping employers in control of funding, approvals, and payment accountability.",
+    "demoVideo": "https://github.com/dktrn9ne/cadence-on-rho/raw/refs/heads/main/assets/cadence-on-rho-submission.mp4",
+    "demoEmbedUrl": "",
+    "demoProvider": "",
+    "demoThumbnailUrl": "",
     "tracks": [
-      "Agents"
+      "Rho Fintech"
     ],
     "attendees": [
       {
-        "name": "Mackenzie Knapp",
-        "linkedin": "https://www.linkedin.com/in/mackenzieknapp/"
+        "name": "Maurice Thomas",
+        "linkedin": "https://www.linkedin.com/in/mrt45/"
+      }
+    ],
+    "githubRepo": "https://github.com/dktrn9ne/cadence-on-rho",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "zeta-one",
+    "name": "zeta-one",
+    "description": "Zeta One: trust and risk intelligence for AI agents that move money Problem. Businesses are starting to let AI agents pay their bills. A known agent with valid permissions can still be manipulated: an invoice can carry hidden instructions, or a vendor’s bank details can be quietly swapped. Knowing who the agent is and what it may do doesn’t answer the question that matters: is this payment fraud anyway? Who it helps. Financial platforms like Rho, whose customers want agents to pay bills, and the finance teams and fraud reviewers who answer for those payments. Solution. Zeta One is a gateway that checks every agent payment before money moves. It asks who is acting, whether the business authorized the payment, and whether the payment looks like fraud. It then returns allow, challenge or block, with an evidence record saying why. When a customer disputes a payment, an assistant gathers the records and researches the vendor with cited sources, and a person decides. What makes it stand out. No model can talk money past a hard check. Code enforces identity, limits and hard risk flags. The right intelligence at each step. Rules decide routine payments. Jev, a typed decision model, and then a language model review only the uncertain ones. Customer friction counts as a cost, measured next to missed fraud. Data can stay in-house. We tested an open-weight model on a GPU we rented, as a fintech would run on its own server. Measured like an ML system, with frozen test sets, baselines and error analysis. Learning only from what people verify. A customer’s claim alone changes nothing. Impact. On 100 synthetic test cases, the rules alone let no fraud through but held 39 of 51 legitimate payments. Model review cut those holds to 14–19. The self-hosted model got 94 right for under $2 per 1,000 decisions. These are synthetic results, not production accuracy, and payments are simulated.",
+    "demoVideo": "https://www.loom.com/share/d9cbee5d5ef44563a546e5669a26432f",
+    "demoEmbedUrl": "https://www.loom.com/embed/d9cbee5d5ef44563a546e5669a26432f",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/d9cbee5d5ef44563a546e5669a26432f-73389233197822f6.gif",
+    "tracks": [
+      "Rho Fintech",
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Jess Sun",
+        "linkedin": "https://www.linkedin.com/in/jess-sun-phd-8ua7ln/"
+      }
+    ],
+    "githubRepo": "https://github.com/jesssss812/zeta-one",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "readyhex",
+    "name": "ReadyHex",
+    "description": "ReadyHex enables Agents (and people) to query and organize geospatial data. You can set up custom workflows and an AI agent will help you do it. ReadyHex also supports has a data enrichment market where agents can be paid paid to enrich your geospatial data. The demo works best in the Austin TX area. Check it out here: https://readyhex.com/ Check out the demo here: https://www.loom.com/share/712e26dd4ce94fba8cfb65dd8ec7f42d",
+    "demoVideo": "https://www.loom.com/share/712e26dd4ce94fba8cfb65dd8ec7f42d",
+    "demoEmbedUrl": "https://www.loom.com/embed/712e26dd4ce94fba8cfb65dd8ec7f42d",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/712e26dd4ce94fba8cfb65dd8ec7f42d-750fa032549b352c.gif",
+    "tracks": [
+      "Antler Agents",
+      "Rho Fintech"
+    ],
+    "attendees": [
+      {
+        "name": "Ahmed Alkarboly",
+        "linkedin": "https://www.linkedin.com/in/ahmedalkarboly/"
       },
+      {
+        "name": "Sean Mulvihill",
+        "linkedin": "https://www.linkedin.com/in/sean-m-mulvihill/"
+      }
+    ],
+    "githubRepo": "https://github.com/alkarboly/ezhex",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "payrun-guard",
+    "name": "PayRun Guard",
+    "description": "PayRun Guard is the safety check an AI agent must pass before it pays bills on Rho: it reads bills, vendors, balances and scheduled payments from Rho's sandbox API, applies 14 rules to each bill plus run-wide checks and a cash-floor plan (22 finding types), and cites the Rho record behind every hold. An agent loop plans, calls four tools (get run, pre-flight, request approval, pay), verifies each result, and can only pay a bill that passed pre-flight and carries a signed human approval token for that exact run, bill and amount; payments are idempotent and every decision lands in an append-only audit log. On this week's sandbox run, 3 of 13 bills ($896.50) are paid and 10 are held, while a naive agent without the gate would have made 9 improper payments worth $7,070.00. Payments are simulated (Rho's public API is read-only), the data is Rho's fictional sandbox company, and all code was written this week and is open source (MIT).",
+    "demoVideo": "https://www.loom.com/share/866063d88da34254bc37a514e1d756d2",
+    "demoEmbedUrl": "https://www.loom.com/embed/866063d88da34254bc37a514e1d756d2",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/866063d88da34254bc37a514e1d756d2-0ab78be17cd462ef.gif",
+    "tracks": [
+      "Rho Fintech",
+      "Antler Agents"
+    ],
+    "attendees": [
       {
         "name": "Igor Eduardo",
         "linkedin": "https://www.linkedin.com/in/igor-eduardo-00z/"
       }
     ],
-    "githubRepo": "https://github.com/nomad-link-id/eterna-id-2/",
-    "bounties": [
-      "DeepInvent Top Science Hack"
-    ],
+    "githubRepo": "https://github.com/igoreduardoai/payrun-guard",
     "showcaseWorthy": ""
   },
   {
-    "id": "team-x-hallpass-featuring-the-ava-attendance-officer",
-    "name": "Team X - Hallpass featuring the Ava Attendance Officer",
-    "description": "A multilingual school attendance agent that closes the loop between classroom attendence, school policy, and guardian communication.",
-    "demoVideo": "https://www.loom.com/share/30ab63e5eb3e4f97b4b8c7721248c04b",
-    "demoEmbedUrl": "https://www.loom.com/embed/30ab63e5eb3e4f97b4b8c7721248c04b",
+    "id": "stacks",
+    "name": "Stacks",
+    "description": "stacks is a recipe book for coding agents. It gives your agent a proven tech stack setup for a new project, plus a checklist that must pass before the project counts as done. Today, an agent asked to start a project makes different choices each time and often skips the tests, linting, agent ops infra, and CI that a careful developer would add. stacks keeps the parts that don't change, like the layout and the rules, in the recipe, and the agent looks up current package versions itself, so the recipe never goes stale. For a developer, that means a new project with tests, battle tested tools and agent ops infra, provisioned and able to run in minutes instead of an afternoon of setup, and a passing checklist that shows the provisioned dev stack works before you start building on it.",
+    "demoVideo": "https://www.loom.com/share/bc12887b5cc14dd18ef6fb54abf1de1c",
+    "demoEmbedUrl": "https://www.loom.com/embed/bc12887b5cc14dd18ef6fb54abf1de1c",
     "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/30ab63e5eb3e4f97b4b8c7721248c04b-80db635b86a4e228.gif",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/bc12887b5cc14dd18ef6fb54abf1de1c-ef64318d5d7af8a7.gif",
     "tracks": [
-      "Agents"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "Julianna Messineo",
-        "linkedin": "https://www.linkedin.com/in/julianna-messineo/"
+        "name": "Riley Hilliard",
+        "linkedin": "https://www.linkedin.com/in/rileyhilliard/"
       },
-      {
-        "name": "Chrissy McDannell",
-        "linkedin": "https://www.linkedin.com/in/christinemcdannell/"
-      },
-      {
-        "name": "Jose Gonzalez",
-        "linkedin": "https://www.linkedin.com/in/josemgonzalez1/"
-      },
-      {
-        "name": "Jonathan Malkin",
-        "linkedin": "https://www.linkedin.com/in/jonathanmalkin/"
-      }
-    ],
-    "githubRepo": "https://github.com/gonzalj3/hallPassAttendanceOfficer",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "rhizo-dataroot",
-    "name": "Rhizo - DataRoot",
-    "description": "teams across all departments should be able to know where to look for data/ ask questions / respond to customer inquiries using shared knowledge across the entire company. De-siloing data stores for research",
-    "demoVideo": "https://www.loom.com/share/690d88e0d8434625a36d8d9e49ad6c31",
-    "demoEmbedUrl": "https://www.loom.com/embed/690d88e0d8434625a36d8d9e49ad6c31",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/690d88e0d8434625a36d8d9e49ad6c31-d618e6e1273b3a40.gif",
-    "tracks": [
-      "Agents",
-      "Open Data"
-    ],
-    "attendees": [
-      {
-        "name": "Aufstin Filiko",
-        "linkedin": "https://linkedin.com/in/filiko/"
-      }
-    ],
-    "githubRepo": "https://github.com/filiko/DataRoot",
-    "bounties": [
-      "DeepInvent Top Science Hack",
-      "Best use of Miro Bounty"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "starscape-ui-studio",
-    "name": "Starscape UI Studio",
-    "description": "An agentic design studio that turns a rough vibe into a living interface identity. Starscape helps creators and communities generate app interfaces that feel personal, expressive, and coherent instead of generic. A user starts with a prompt, concept, or mood. Starscape turns it into a themed UI system with components, design tokens, visual assets, sound effects, custom cursors, 9-sliced backgrounds, and various export options. ## Why it matters AI is making software faster to build. That creates a new problem: generated apps are starting to look and feel the same. Starscape focuses on the identity layer behind the interface: - What should this product feel like? - What visual world does this community belong in? - How do colors, components, borders, sound, and guidance stay coherent? - How does the output move into real design and code workflows? The goal is not another screen generator. The goal is software that feels like it belongs somewhere.",
-    "demoVideo": "https://www.loom.com/share/344a788691614dfd8a67be1a604b334c",
-    "demoEmbedUrl": "https://www.loom.com/embed/344a788691614dfd8a67be1a604b334c",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/344a788691614dfd8a67be1a604b334c-eda40cff2ff0fe1b.gif",
-    "tracks": [
-      "Agents",
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Bruce Robinson",
-        "linkedin": "https://linkedin.com/in/brucedeanrobinson/"
-      }
-    ],
-    "githubRepo": "https://github.com/brucestarlove/AITX-hackathon-ui-pipeline",
-    "bounties": [
-      "Best use of Miro Bounty",
-      "DeepInvent Best Patentable Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "buildable-lovalble-for",
-    "name": "Buildable - Lovalble for",
-    "description": "Buildable is a multi-agent hardware architect that turns a messy natural-language idea into a build-ready ESP32 project packet. Instead of acting like a template picker, it runs a visible chain of specialised agents that ask clarifying questions, choose the closest supported build, plan hardware, check safety, map pins, generate firmware config, produce wiring and schematic outputs, and package everything into inspectable deliverables. What makes it especially strong for a hackathon is that the whole system is transparent and debuggable. Every stage writes structured JSON checkpoints so agents can hand work to each other cleanly, and the final output also includes native builder formats like KiCad and OpenSCAD. That means you can watch the reasoning happen, inspect every decision, recover from weak or unsupported prompts, and open the generated artifacts directly instead of trusting a black box. - Multi-agent pipeline, not a single-shot generator - Local-first architecture with filesystem-backed project output - Visible agent timeline with step-by-step reasoning and checkpoints - Structured JSON handoffs between agents so the pipeline is easy to debug and extend - Multiple numbered JSON outputs generated per project, including intent, template match, hardware plan, safety review, pin map, firmware config, wiring plan, schematic plan, BOM, PCB plan, assembly plan, and final review - `agent-log.json` and `build-output.json` make every run inspectable - Native artifact generation, not just summaries - Real KiCad outputs like `.kicad_pro`, `.kicad_sch`, `.kicad_pcb`, generated symbols, and footprints - OpenSCAD enclosure output for case concepts - Human-readable docs for BOM, wiring, safety, assembly, and project README - Configuration-first firmware handoff for a shared ESP32 starter - Safety-aware planning that can block unsupported or risky builds - Recovery behavior that can reroute vague or unsupported prompts into the nearest strong supported prototype - Works especially well for high-demo-value ESP32 concepts Example build ideas it can handle: - YouTube subscriber monitor for a studio desk - API status dashboard with OLED metrics - RFID vending machine prototype - Stripe QR payment-triggered locker controller - Coin-operated relay timer - Smart access controller for a coworking space - Member-only dispenser with RFID approval - Low-voltage sensor and automation builds",
-    "demoVideo": "https://www.loom.com/share/e1a8fe2dee1d475c9111c883df7f92f1",
-    "demoEmbedUrl": "https://www.loom.com/embed/e1a8fe2dee1d475c9111c883df7f92f1",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/e1a8fe2dee1d475c9111c883df7f92f1-734e480f06668f8f.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Lakshit Anand",
-        "linkedin": "https://linkedin.com/in/lakshit1001-wendor/"
-      }
-    ],
-    "githubRepo": "https://github.com/lakshit1001/antler-hackathon-buildable",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "team-improv-kineticai",
-    "name": "Team Improv - KineticAI",
-    "description": "We take still product images and turn them into highly customized, exciting product videos. We allow for freeform collaboration in Miro to come up with the ultimate plan for an amazing product showcase.",
-    "demoVideo": "https://www.loom.com/share/d9ef47c619ea46c7bcca027d4bd941a6",
-    "demoEmbedUrl": "https://www.loom.com/embed/d9ef47c619ea46c7bcca027d4bd941a6",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/d9ef47c619ea46c7bcca027d4bd941a6-55ce9730639d4d06.gif",
-    "tracks": [
-      "AutoHDR",
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "JACK CHEN",
-        "linkedin": "https://www.linkedin.com/in/jack-chen-artist/"
-      },
-      {
-        "name": "ROHAN MUKHERJEE",
-        "linkedin": "https://www.linkedin.com/in/rohan-mukherjee-19a3a51b7/"
-      }
-    ],
-    "githubRepo": "https://github.com/epiphanyai/KineticAI",
-    "bounties": [
-      "Best use of Miro Bounty"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "haus-visualize-your-space-as-your-own",
-    "name": "Haus: Visualize Your Space as Your Own",
-    "description": "Haus turns floor plans and Pinterest inspiration into personalized photo-to-video apartment walkthroughs. A lot of home and architecture inspiration already starts on Pinterest, but that inspiration usually stays disconnected from the real floor plans people are actually touring. At the same time, most apartment tours show empty rooms, flat layouts, or generic staged photos, making it hard to imagine how an unfurnished space could feel as your own home. Haus combines these workflows. Users bring their Pinterest inspiration, style preferences, and floor plan, and our system designs the apartment around the actual layout and dimensions. From there, Haus generates room stills and transforms them into a final video walkthrough, helping people visualize an unfurnished apartment in the way they want to live in it. Our agents power a 5-stage pipeline: they synthesize the floor plan, learn the user’s aesthetic from Pinterest, generate accurate room designs, collect human feedback, and execute a final cinematic video with a seamless experience. Haus helps renters, buyers, designers, and property teams move from inspiration to visualization: from floor plan to future home.",
-    "demoVideo": "https://www.loom.com/share/a47800f6cc45451caca9f6520ca39bc0",
-    "demoEmbedUrl": "https://www.loom.com/embed/a47800f6cc45451caca9f6520ca39bc0",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/a47800f6cc45451caca9f6520ca39bc0-d75570fc1556ffbd.gif",
-    "tracks": [
-      "AutoHDR",
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Kusum Bhattarai Sharma",
-        "linkedin": "https://www.linkedin.com/in/kusum-bhattarai-sharma/"
-      },
-      {
-        "name": "Saksham Adhikari",
-        "linkedin": "https://www.linkedin.com/in/adhsaksham/"
-      }
-    ],
-    "githubRepo": "https://github.com/kusum-bhattarai/haus",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "team-clawgods-reprolab",
-    "name": "Team ClawGods - ReproLab",
-    "description": "ReproLab started from a problem we kept running into during ML research: reading papers was easy, but implementing them was painfully slow. We would spend days debugging undocumented environments, searching for missing checkpoints, or reverse engineering details that were never clearly explained. Sometimes reproducing a paper took longer than understanding the actual idea. We built ReproLab to automate that process. It is a multi agent research system with a formal verification system that turns ML papers into reproducible and verifiable research programs. Instead of manually piecing together repositories, dependencies, datasets, and evaluation pipelines, ReproLab launches specialized agents in parallel to recover artifacts, rebuild environments, run experiments, compare outputs against published results, and identify inconsistencies automatically. We also integrated tools like Apify to automate large scale discovery of repositories and implementation details across the web. ReproLab acts more like an operating system for autonomous research execution than a paper summarizer. A user can point it at a paper and have it generate a runnable pipeline customized to their own infrastructure and compute resources. What normally takes researchers weeks of environment debugging and implementation guessing can now happen in hours, making cutting edge research much easier to validate, extend, and build on.",
-    "demoVideo": "https://www.loom.com/share/19cc4ebffe9748ad8c4d2d7119fecdbd",
-    "demoEmbedUrl": "https://www.loom.com/embed/19cc4ebffe9748ad8c4d2d7119fecdbd",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/19cc4ebffe9748ad8c4d2d7119fecdbd-c972c17bb4f71fff.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Rishi Golla",
-        "linkedin": "https://www.linkedin.com/in/rishi-golla/"
-      },
-      {
-        "name": "Armaan Amatya",
-        "linkedin": "https://www.linkedin.com/in/armaan-amatya/"
-      },
-      {
-        "name": "Aayush Baniya",
-        "linkedin": "https://www.linkedin.com/in/aayush-baniya-a30551223/"
-      },
-      {
-        "name": "Abheek Pradhan",
-        "linkedin": "https://www.linkedin.com/in/abheekpradhan/"
-      },
-      {
-        "name": "Ivan Braenan",
-        "linkedin": ""
-      }
-    ],
-    "githubRepo": "https://github.com/armaanamatya/openresearch",
-    "bounties": [
-      "DeepInvent Top Science Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "create-facebook-real-estate-video-ads-with-flick",
-    "name": "Create Facebook Real Estate Video Ads with Flick",
-    "description": "Flick turns ChatGPT into a complete real estate Facebook video ad workflow. Start by pasting a listing into ChatGPT, and Flick a short listing video, and creates a Facebook ad draft in Meta Ads Manager. The project is designed around a practical real estate use case: helping agents move from MLS-style listing text to market-ready video ads in minutes. Key features: - ChatGPT custom connector powered by MCP - One-prompt listing video, property page, and Facebook ad draft generation - Built with Bun, TypeScript, Better Auth, Drizzle, and local SQLite Flick is built for ambitious business owners, not engineers: paste a listing, review the generated assets, approve the ad, and go live today.",
-    "demoVideo": "https://www.loom.com/share/ced7e445e85e44a584776793263bde53",
-    "demoEmbedUrl": "https://www.loom.com/embed/ced7e445e85e44a584776793263bde53",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/ced7e445e85e44a584776793263bde53-93e5a1c5d90a92b0.gif",
-    "tracks": [
-      "AutoHDR",
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Matt Wood",
-        "linkedin": "https://www.linkedin.com/in/mattwoodco/"
-      },
-      {
-        "name": "Murad Aleskerov",
-        "linkedin": "https://www.linkedin.com/in/murad-aleskerov/"
-      },
-      {
-        "name": "Alex Polus",
-        "linkedin": "https://www.linkedin.com/in/alex-p-686847146/"
-      }
-    ],
-    "githubRepo": "https://github.com/mattwoodco/flick",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "autovideo-hdr",
-    "name": "AutoVideo-HDR",
-    "description": "AutoVideo HDR turns property photos into fully edited cinematic videos, removing the dependency on trained videographers. Users upload their photos, pick a style, Avatar and settings and the pipeline orchestrates everything automatically. Built on Trigger.dev for long-running jobs, Next.js 16 + MongoDB and R2 for storage. I used nano-banana/edit for image enhancement and Kling Video v3 for video and avatars Also the transitions and text of the video editor are made with hyperframe",
-    "demoVideo": "https://www.loom.com/share/144c428147a54a38b5e00ac67987dd98",
-    "demoEmbedUrl": "https://www.loom.com/embed/144c428147a54a38b5e00ac67987dd98",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/144c428147a54a38b5e00ac67987dd98-963704d41e7d2a36.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Magio Bustillos",
-        "linkedin": "https://www.linkedin.com/in/magiobus/"
-      }
-    ],
-    "githubRepo": "https://github.com/magiobus/autovideo-hdr",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "object-oriented-videography",
-    "name": "OBJECT ORIENTED VIDEOGRAPHY",
-    "description": "REFERENCE VIDEO: https://r2-public.waqaas.workers.dev/SnapInsta-Ai_3827468812233464997.mp4 OUTPUT: https://r2-public.waqaas.workers.dev/autohdr-output/saddle-creek-rich-transitions-final.mp4 OUTPUT: https://r2-public.waqaas.workers.dev/autohdr-output/ref1-anmer-rich-final.mp4 OUTPUT: https://r2-public.waqaas.workers.dev/autohdr-output/ref1-cherry-st-208-final.mp4 Our agent orchestration system converts a destination photoshoot into a final video while preserving the style of a reference video. We extract a timestamped span graph from the reference video, then enrich each shot with detailed descriptions covering composition, camera motion, lighting, and execution hints. We then build a style template JSON and generate a photo inventory from the destination images, including object and visual parameters like orientation, brightness, contrast, and suitability for motion effects. An agent selects and edits candidate photos for each shot slot, sends them through image-to-video processing, stitches results to reference music, and produces the final video. PS: agent-ui branch for the repo is the functional branch",
-    "demoVideo": "https://www.loom.com/share/ce87f1c0d49241dca709f37fe8c5ad53",
-    "demoEmbedUrl": "https://www.loom.com/embed/ce87f1c0d49241dca709f37fe8c5ad53",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/ce87f1c0d49241dca709f37fe8c5ad53-a6955a6769142c8d.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Waqaas Akmal Butt",
-        "linkedin": "https://www.linkedin.com/in/waqaas-akmal-butt/"
-      },
-      {
-        "name": "Raghu Reddy",
-        "linkedin": "https://www.linkedin.com/in/raghunandan-r-98a2ba83/"
-      }
-    ],
-    "githubRepo": "https://github.com/raghu-135/fal-ai-video-description-agent",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "manifold-natural-language-space-mission-designer",
-    "name": "Manifold - Natural Language Space Mission Designer",
-    "description": "Designing a fuel-efficient mission through cislunar space — the region between Earth and the Moon — has historically required specialized software, weeks of computation, and a PhD in astrodynamics. The gravitational structure of the Earth-Moon system contains invisible highways called invariant manifolds: tube-like surfaces along which spacecraft can travel between orbits with near-zero fuel cost. Finding and visualizing these has never been accessible outside of research institutions. Manifold changes that. It is a natural-language astrodynamics agent that lets anyone explore cislunar orbital dynamics by simply typing what they want to see. Ask it to show a family of halo orbits around the L2 Lagrange point — the ones NASA's Gateway station will use — and it renders all of them, color-coded by energy level, in real time. Ask it to show the manifold tubes of a specific orbit and it computes the gravitational highways emanating from it. Ask it to plan a transfer between two orbits from different families and it animates a spacecraft along the manifold-guided trajectory. Under the hood, a FastAPI Python backend implements the full 3D Circular Restricted Three-Body Problem, integrating equations of motion with a Dormand-Prince 8th order integrator and computing State Transition Matrix eigenvectors to find manifold tubes. GPT-4o parses natural language into structured astrodynamics commands. 14,615 verified periodic orbit initial conditions are loaded from JPL's database. The Three.js frontend renders everything with physically accurate geometry and real-time bloom post-processing. This tool is built by and for space mission designers. As cislunar space becomes the most strategically contested region in the solar system — Artemis, Gateway, commercial lunar landers — the ability to rapidly explore trajectory options will matter enormously. Manifold is what mission design looks like when you give it a natural language interface.",
-    "demoVideo": "https://www.loom.com/share/7ec94ebc1aa84b1a95f94326bba8c9ae",
-    "demoEmbedUrl": "https://www.loom.com/embed/7ec94ebc1aa84b1a95f94326bba8c9ae",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/7ec94ebc1aa84b1a95f94326bba8c9ae-ad335e0efd37a595.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Alexander Cremer",
-        "linkedin": "https://www.linkedin.com/in/alexander-cremer-b733aa2a2/"
-      }
-    ],
-    "githubRepo": "https://github.com/SpektakularaAlex/manifold-whisper",
-    "bounties": [
-      "DeepInvent Top Science Hack",
-      "DeepInvent Best Patentable Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "birthdaybot",
-    "name": "BirthdayBot",
-    "description": "Upload a photo of you and the birthday person, write a quick prompt, and BirthdayBot makes you a cinematic birthday video. Choose how you want the message delivered: a warm narration in your own voice, your real recording polished and dropped over the video, or a custom birthday song in any style. Send it like a card, only it actually feels like you.",
-    "demoVideo": "https://www.loom.com/share/f0f3422999834ac38f9ce4fb369444f7",
-    "demoEmbedUrl": "https://www.loom.com/embed/f0f3422999834ac38f9ce4fb369444f7",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/f0f3422999834ac38f9ce4fb369444f7-82bc2f67f3080583.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Rajat Arora",
-        "linkedin": "https://www.linkedin.com/in/rajat-arora-613b4b130/"
-      },
-      {
-        "name": "Rodolfo Rodriguez",
-        "linkedin": "https://www.linkedin.com/in/rodolfo-r/"
-      }
-    ],
-    "githubRepo": "https://github.com/RajatA98/BirthdayBot",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "atlastexas-org-open-source-intelligence-network-for-texas",
-    "name": "AtlasTexas.org, Open source intelligence network for Texas",
-    "description": "Atlas TX is a county-first OSINT workspace for Texas public-interest evidence. It joins TCEQ permits + Texas Water Districts with EPA SDWIS, EPA EJScreen, USGS hydrology, and Census ACS into one map-first investigation surface — and exposes the same evidence stack three ways: a public site at atlastexas.org, a local MCP server, and a packaged agent skill with safety guardrails. Most public-data products stop at display. Atlas TX is built to investigate. You start on a county map, spot mismatch between regulatory signal and environmental-justice burden, drill into permits / violations / hydrology / operators, and — when the desk evidence is ambiguous — launch an Android field mission to capture a colorimetric water-strip observation that's stored as a banded community submission, never collapsed into the authoritative score. What we shipped this hackathon: Interactive county choropleth (/maps) with view modes for EJ burden, operator concentration, surface-water quality, and citizen submissions Six Tufte-style SVG viz primitives (sparkline, micro-bar, mismatch strip, tile cartogram, Sankey, Marey) used across /counties, /permits, /water/network /permits Marey chart of TCEQ active-permit coverage tenure by county Citizen water-observation lane (/citizen) with strict non-regulatory framing — banded readings only, separate from SDWIS/TCEQ @atlas-tx/mcp-server exposing 10+ read-only tools (score_pws_drinking_water_risk, overlay_ej_burden, summarize_water_risk_for_county, list_permit_filing_red_flags, build_permit_protest_prep, analytics-spine tools, …) — every response carries data + sources + caveats + generated_at + cache_state Atlas TX agent skill (skills/atlas-tx/SKILL.md) with explicit guardrails: indicator-not-outcome framing, source attribution, verbatim caveats, no health-causation / individual-PII / muni-debt claims LLM-maintained Karpathy-style wiki (docs/wiki/) with confidence/decay/typed-relationships and an idempotent linter The thesis: Texas has too much fragmented public data and too much county-by-county process hidden from view. Atlas turns that fragmentation into a usable, governed evidence layer that works for humans, journalists, and AI-native workflows on the same evidence.",
-    "demoVideo": "https://www.loom.com/share/aefdecb1f0a6415599bf50e5e93f53e5",
-    "demoEmbedUrl": "https://www.loom.com/embed/aefdecb1f0a6415599bf50e5e93f53e5",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/aefdecb1f0a6415599bf50e5e93f53e5-867fa896cc3ffb01.gif",
-    "tracks": [
-      "Agents",
-      "Open Data"
-    ],
-    "attendees": [
-      {
-        "name": "Stephen Bauer]",
-        "linkedin": "https://www.linkedin.com/in/sdavidbauer/"
-      }
-    ],
-    "githubRepo": "https://github.com/sbauwow/atlas-tx",
-    "bounties": [
-      "DeepInvent Best Patentable Hack",
-      "DeepInvent Top Science Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "busy-mom-agent",
-    "name": "Busy Mom Agent",
-    "description": "Fewer evening decisions for busy moms with one dinner plan and bedtime book at a time. Grocery shopping help optional.",
-    "demoVideo": "https://www.loom.com/share/0ef726c13a5d4517a95956053231b14f",
-    "demoEmbedUrl": "https://www.loom.com/embed/0ef726c13a5d4517a95956053231b14f",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/0ef726c13a5d4517a95956053231b14f-cbfb010b2f0271b8.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Hemant Bhangale",
-        "linkedin": ""
-      }
-    ],
-    "githubRepo": "https://github.com/nyhemant/AITXhackathon",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "dryline-address-based-water-supply-intelligence-for-texas",
-    "name": "Dryline - Address-based water-supply intelligence for Texas",
-    "description": "Texas added 4 million people in five years. Our water didn't keep up. The data exists across TWDB, USGS, EPA, and TCEQ - but it's scattered across five sites that don't talk to each other. And the address-based environmental tools you know - First Street, EJScreen - stop where water supply begins. Dryline fills that gap. Type any Texas address. An autonomous agent investigates the water situation across six public datasets, returns a synthesized briefing with inline citations and structured caveats, and drafts a concrete civic action - typically a fileable public comment on a live TCEQ permit. Two modes: Personal (\"will the water last here?\") for homeowners and well owners; Transparency (\"who's drinking your aquifer?\") for journalists and engaged citizens. We ship both technical deliverables the brief asks for: an open-source MCP server with eight bounded tools (each returning data, caveats, and sources) and a portable agent skill any MCP-compatible runtime can load. Solo build by Will Hines, with two coding agents working in parallel - Codex on the Next.js web app, Claude Code on the MCP server and the agent skill. MIT-licensed. Submitting to: Primary - Brainforge / Vicinity Texas Open Data Track Secondary 0 Agents Track",
-    "demoVideo": "https://www.loom.com/share/711bdbfb29cb4438a67b25f8d9ff69af",
-    "demoEmbedUrl": "https://www.loom.com/embed/711bdbfb29cb4438a67b25f8d9ff69af",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/711bdbfb29cb4438a67b25f8d9ff69af-9d47d06a13d2ab52.gif",
-    "tracks": [
-      "Open Data",
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Will Hines",
-        "linkedin": "https://linkedin.com/in/williamehines/"
-      }
-    ],
-    "githubRepo": "https://github.com/willhines90/dryline",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "autohdr-track-ai-photo-to-video-for-real-estate-by-black-hole-surfer",
-    "name": "AutoHDR Track: AI Photo to Video for Real Estate by Black Hole Surfer",
-    "description": "AutoHDR Track: AI Photo to Video for Real Estate video generator with prompt Video and images demonstrate the source image and video that was generated from it.",
-    "demoVideo": "https://www.loom.com/share/6c44948fca7944489cf8186ac6df53e2",
-    "demoEmbedUrl": "https://www.loom.com/embed/6c44948fca7944489cf8186ac6df53e2",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/6c44948fca7944489cf8186ac6df53e2-f61e2505f79e80e9.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Daniel Hudsky",
-        "linkedin": ""
-      }
-    ],
-    "githubRepo": "https://github.com/Blackholesurfer/hdr",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "goza",
-    "name": "Goza",
-    "description": "We built an autonomous AI CMO for startups. You paste in your website, the agents understands what your product actually is, find the niche your customers care about, multiple agents (hook agent, humor agent, scout agent) , research high performing short-form videos in that market, extracts the hooks and creative patterns that are already working, and turns that into a generated UGC style video campaign. Instead of being another “AI content generator,” it behaves kinda like a marketing operator, it leverages multiple agents to scout TikTok's, ranks viral evidence, drafts campaign angles, creates the video with brand/product references, and can push the finished asset toward posting. https://www.instagram.com/senthyugc/ (THE ACCOUNT IT POSTS ON)",
-    "demoVideo": "https://www.loom.com/share/db651c5c233f41f2a3592c4a98df9169",
-    "demoEmbedUrl": "https://www.loom.com/embed/db651c5c233f41f2a3592c4a98df9169",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/db651c5c233f41f2a3592c4a98df9169-7e81507620e8c608.gif",
-    "tracks": [
-      "Agents",
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Anish Senthilarasu",
-        "linkedin": "https://www.linkedin.com/in/anish-senthil-857232377/"
-      },
-      {
-        "name": "Varun Murugan",
-        "linkedin": "https://www.linkedin.com/in/varun-murugan-/"
-      }
-    ],
-    "githubRepo": "https://github.com/VarunMurugan194/Goza-CMO",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "team-shep-perceptual-packet-protocol-this-portrait-is-a-tool-call",
-    "name": "Team Shep - Perceptual Packet Protocol, \"This Portrait Is A Tool Call\"",
-    "description": "Perceptual Packet Protocol turns AI-generated portraits into machine-readable agent commands. Two agents exchange face photographs over a shared channel. Humans see normal portraits; agents decode protocol moves from calibrated head-pose measurements. The system uses LivePortrait to generate photorealistic faces that encode specific symbols (HELLO_SYNC, CHECK_WEATHER, ACK, etc.) into measurable pose parameters. MediaPipe extracts the pose, and a seeded decoder maps the geometry back to protocol symbols. A state machine gates tool execution — for example, a decoded weather command only triggers check_weather() if the session handshake has already completed. Key Results - 8-symbol codebook - 100% decode accuracy across 8 identities - Survives JPEG compression, resize, crop, blur, and sharpen with zero misses - Wrong seeds produce gibberish - Wrong protocol state blocks tool dispatch even when decode is correct This is: - Not steganography — nothing is hidden in the pixels - Not a watermark — nothing is overlaid - Not encryption — the image itself is public Instead, it introduces a new primitive: a keyed visual code where the ciphertext is a natural face photograph. The “decoder ring” can be: - a paragraph of English, - a prompted LLM, - a geometric measurement pipeline, - or even a trained human eye. Built solo in a weekend using OpenAI Codex, fal.ai, and MediaPipe. Includes an interactive demo site and full calibration pipeline.",
-    "demoVideo": "https://www.loom.com/share/cbe677c9eeec4daf8329678addfe037f",
-    "demoEmbedUrl": "https://www.loom.com/embed/cbe677c9eeec4daf8329678addfe037f",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/cbe677c9eeec4daf8329678addfe037f-25e12eac2dcc07b5.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Shep Bryan –",
-        "linkedin": "https://linkedin.com/in/shepbryan/"
-      }
-    ],
-    "githubRepo": "https://github.com/elsheppo/face-key",
-    "bounties": [
-      "DeepInvent Best Patentable Hack",
-      "DeepInvent Top Science Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "listingreels",
-    "name": "ListingReels",
-    "description": "Real estate agents need listing videos that feel native to Reels, TikTok, and Shorts, but most tools still behave like slideshow makers. ListingReel is an AI creative director for real estate photo-to-video generation. It turns listing photos into a planned, editable, social-first video package. The user starts with property photos, chooses a creator Style DNA, and gives a goal for the reel. The Creative Director Agent classifies rooms, selects the best shots, plans camera movement, writes image-edit and image-to-video prompts, tracks tool calls, performs QA, retries a bad kitchen generation, and prepares a 9:16 export package with caption, thumbnail, timeline JSON, and manifest JSON. The app is mock-first for a reliable no-spend demo, but includes server-side Fal adapter paths for a Kitchen live proof and an optional local FFmpeg render path for a real 1080x1920 MP4 when explicitly enabled. ListingReel helps agents, small brokerages, and real estate marketers create better listing reels faster while preserving property accuracy. The impact is practical: less time editing, more consistent brand style, and a workflow that makes AI generation controllable shot by shot instead of a black box. The MVP is honest about boundaries: browser-local demo uploads, optional live provider calls, mock default rendering, and production persistence/auth/social posting deferred.",
-    "demoVideo": "https://www.loom.com/share/88c9a5ead0de440eac8ed96cde273653",
-    "demoEmbedUrl": "https://www.loom.com/embed/88c9a5ead0de440eac8ed96cde273653",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/88c9a5ead0de440eac8ed96cde273653-22a7d9758a41a3ce.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Eduardo Brambila",
-        "linkedin": "https://www.linkedin.com/in/magospace/"
-      }
-    ],
-    "githubRepo": "https://github.com/magospace/ListingReels",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "txlookup",
-    "name": "TXLookup",
-    "description": "Texas civic data, accessible to anyone who can search Google. 6,061 datasets across 6 open-data portals. A team of OpenAI-powered agents picks the right one, writes the query, runs it on the source-of-truth portal, and hands you a sourced answer in plain English. Free. Open source. MIT-licensed. Live at txlookup.vercel.app.",
-    "demoVideo": "https://www.loom.com/share/bf6febe34f0e4248be84d0f2bde3903f",
-    "demoEmbedUrl": "https://www.loom.com/embed/bf6febe34f0e4248be84d0f2bde3903f",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/bf6febe34f0e4248be84d0f2bde3903f-f69b0dcd8ce1431e.gif",
-    "tracks": [
-      "Agents",
-      "Open Data"
-    ],
-    "attendees": [
-      {
-        "name": "Ravinder Jilkapally",
-        "linkedin": ""
-      },
-      {
-        "name": "Kunal Vyas",
-        "linkedin": ""
-      },
-      {
-        "name": "Godwyn James",
-        "linkedin": ""
-      },
-      {
-        "name": "Raj Akula",
-        "linkedin": ""
-      }
-    ],
-    "githubRepo": "https://github.com/ATX-TXLookup/TXLookup",
-    "bounties": [
-      "Best use of Miro Bounty"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "skinai",
-    "name": "SkinAI",
-    "description": "SkinAI — Autonomous Dermatology Vision Agent SkinAI is an AI-powered skin health agent that delivers dermatology-grade analysis from a single smartphone photo — instantly and affordably. Users simply upload a photo of their face. SkinAI's vision agent autonomously perceives, analyzes, and scores skin health across four dimensions: Overall Health, Hydration, Texture, and Clarity. Within 60 seconds, the agent returns a personalized health report complete with clinical observations and an actionable quick-win recommendation. The Agent Loop: Photo Input → Claude Vision Perception → Multi-dimensional Reasoning → Scored Report → Personalized Recommendations The Problem We Solve: Dermatology appointments take weeks to book and cost $200+. Existing apps are inaccurate or require expensive hardware. SkinAI makes professional-grade skin analysis accessible to everyone with a smartphone.",
-    "demoVideo": "https://www.loom.com/share/5adf6cd505b44692bb8b09b9045be3e2",
-    "demoEmbedUrl": "https://www.loom.com/embed/5adf6cd505b44692bb8b09b9045be3e2",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/5adf6cd505b44692bb8b09b9045be3e2-d4bddf641ef909f2.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Aayush Khazanchi",
-        "linkedin": "https://www.linkedin.com/in/aayush-khazanchi-814135241/"
-      }
-    ],
-    "githubRepo": "https://github.com/IQEmperor24",
-    "bounties": [
-      "DeepInvent Top Science Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "j-d-sullivan-roomsplat",
-    "name": "J.D. Sullivan - RoomSplat",
-    "description": "The idea is simple: real estate walkthroughs are still weirdly hard to create. You either need expensive capture hardware, manual editing, or a bunch of technical steps. We wanted to make it feel more like taking a phone video. So this starts with a Swift iPhone app. I walk through the property with ARKit running in the background. While I’m recording video, the app is also saving camera motion, tracking quality, feature points, floor and wall planes, and rough room bounds. When I upload the scan, the web app creates a quick ARKit preview first. That means I don’t have to wait for the full 3D model to know if the scan was usable. It gives me capture quality, path length, feature density, tracking quality, and rescan notes. Then I generate the actual splat. Right now the fastest path is KIRI, which turns the video into a Gaussian splat. After that, AutoVR converts it into a PlayCanvas-ready asset, fixes orientation, and opens it as a lightweight walkthrough viewer. Here’s the key part: this is not just “upload a video and hope.” The app is doing inference on the capture metadata. It can tell when the scan is too short, when ARKit saw low texture, when corners probably weren’t revisited, or when the camera path didn’t cover enough of the space. So the workflow is: Capture a walkthrough on iPhone. Upload video plus ARKit poses. Review quality and coverage. Generate the splat. Walk through it in the browser. Open it in SuperSplat if we want cleanup or editing. For the hackathon version, we focused on proving the full loop: phone capture to quality inference to generated 3D walkthrough. The big future step is making the guidance live during capture, so instead of finding out later that you missed a corner, the phone tells you while you’re still in the room. That’s RoomSplat: a phone-first pipeline for turning normal property walkthroughs into shareable 3D Gaussian splat tours.",
-    "demoVideo": "https://www.loom.com/share/914cb82b402d4cd6805267a4b62b6efe",
-    "demoEmbedUrl": "https://www.loom.com/embed/914cb82b402d4cd6805267a4b62b6efe",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/914cb82b402d4cd6805267a4b62b6efe-353ee600a61adc63.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "J.D. Sullivan",
-        "linkedin": "https://www.linkedin.com/in/joseph-d-sullivan-b815041b6/"
-      }
-    ],
-    "githubRepo": "https://github.com/jd-hilo/RoomSplat",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "andrei-butuc-ai-trader",
-    "name": "Andrei Butuc - AI Trader",
-    "description": "An agent that has the ability to track stocks and determine if it is a good idea to invest, hold, or divest from one.",
-    "demoVideo": "https://www.loom.com/share/5b3595f094d9430e89b7e2452780de49",
-    "demoEmbedUrl": "https://www.loom.com/embed/5b3595f094d9430e89b7e2452780de49",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/5b3595f094d9430e89b7e2452780de49-c9994b4b2f9bb2f0.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Andrei Butuc",
-        "linkedin": "https://www.linkedin.com/in/andreibutucsoftdev/"
-      }
-    ],
-    "githubRepo": "https://github.com/kamaja23/trading_llm",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "team-name-firus-hanov-front-desk-front-desk-for-small-business",
-    "name": "Team Name: Firus Hanov - Front Desk - Front Desk for small business",
-    "description": "AI Front Desk turns inbound customer calls into booked appointments automatically — no human dispatcher needed. It also gives business owners live trend intelligence and a Seedance 2 video ad studio, all in one console.",
-    "demoVideo": "https://www.loom.com/share/bbc9904167664dffa61ee1485aa4c1ab",
-    "demoEmbedUrl": "https://www.loom.com/embed/bbc9904167664dffa61ee1485aa4c1ab",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/bbc9904167664dffa61ee1485aa4c1ab-6f8854db744e5e9d.gif",
-    "tracks": [
-      "Agents",
-      "Open Data"
-    ],
-    "attendees": [
-      {
-        "name": "Firus Hanov",
-        "linkedin": ""
-      }
-    ],
-    "githubRepo": "https://github.com/hanovconsulting/AIFrontDesk",
-    "bounties": [
-      "Best use of Miro Bounty"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "texas-county-battle",
-    "name": "Texas County Battle",
-    "description": "Texas has 254 counties and almost no good way to compare them. The data exists — Census Bureau, Texas Comptroller, TABC, the Texas Education Agency — but it's scattered across a dozen portals, formatted for administrators, and requires technical knowledge most people don't have. Residents give up before finding an answer. Journalists waste hours reconciling CSVs. Developers hand-roll every API integration themselves. And anyone asking an AI assistant gets general knowledge instead of real numbers. Texas County Battle was built for all three of them. For residents, it's a head-to-head battle card — pick any two of Texas's 254 counties, see who wins on income, education, commute time, alcohol revenue per capita, school scores, environmental violations, and more. No spreadsheets, no portals, no technical knowledge required. And because it's designed to be fun — with AI-generated summaries and a scoring system that turns data into a rivalry — it lowers the barrier for people who would never think to visit a government data portal in the first place. For journalists and researchers, it surfaces cross-domain comparisons in seconds that would otherwise take hours of CSV wrangling across a dozen sources. For developers and AI workflows, the project ships an MCP server with three clean tools — get_county, compare_counties, and rank_counties — wrapping 17 public datasets into a single, fully attributed, programmatically queryable interface. No undocumented APIs, no stale local caches, no schema reconciliation. The impact is access. Texas public data has always been technically open. Texas County Battle makes it actually usable — for the resident, the reporter, and the developer building the tools they'll both rely on.",
-    "demoVideo": "",
-    "demoEmbedUrl": "",
-    "demoProvider": "",
-    "demoThumbnailUrl": "",
-    "tracks": [
-      "Agents",
-      "Open Data"
-    ],
-    "attendees": [
-      {
-        "name": "Ricardo Pena",
-        "linkedin": "https://www.linkedin.com/in/ricardo-pena-969b7a321/"
-      }
-    ],
-    "githubRepo": "https://github.com/ric4rdo-p/TexasCountyBattle",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "civiccanvas",
-    "name": "CivicCanvas",
-    "description": "Texas public datasets are powerful, but they are often scattered across city portals, difficult to query, and hard to trust without context. CivicCanvas helps civic builders, journalists, organizers, and local teams turn approved public datasets into clear, source-cited dashboards. The app lets a user type a supported plain-English prompt, such as Dallas 311 requests by category and ZIP code, Austin building permits by month and ZIP code, or Houston transportation incidents by type. Instead of generating arbitrary code, it uses deterministic TypeScript parsing, an approved dataset catalog, bounded query specs, and a trusted React canvas block registry. Every result includes maps, charts, tables, filters, source attribution, caveats, and a visible query audit so users can understand where the numbers came from and when sample fallback is being used. For the Brainforge / Vicinity track, CivicCanvas includes both a custom MCP server and a proper agent skill. Agents can discover approved Texas data sources, run safe bounded queries, validate catalog health, summarize results, generate canvas specs, and produce preview-only Miro export specs without exposing hidden fields or running arbitrary SQL. The impact is safer, more approachable public-data exploration: useful visuals without pretending incomplete data is complete, and agent workflows that are powerful but constrained.",
-    "demoVideo": "https://www.loom.com/share/47af855df38e4cf0a942efe33ba3b45a",
-    "demoEmbedUrl": "https://www.loom.com/embed/47af855df38e4cf0a942efe33ba3b45a",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/47af855df38e4cf0a942efe33ba3b45a-1bc2516a1996bd60.gif",
-    "tracks": [
-      "Open Data"
-    ],
-    "attendees": [
-      {
-        "name": "Eduardo Brambila",
-        "linkedin": "https://www.linkedin.com/in/magospace/"
-      }
-    ],
-    "githubRepo": "https://github.com/magospace/CivicCanvas",
-    "bounties": [
-      "Best use of Miro Bounty"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "turbofeed-lowvol",
-    "name": "TurboFeed-LowVol",
-    "description": "At its core, TurboFeed is a creative automation pipeline for social ad campaigns. The problem it solves is simple: brands need the same ad in a dozen formats — square for Instagram, vertical for Reels(TikTok), wide for YouTube — with different lighting moods, different messaging overlaid, and they need it fast. Doing that manually is tedious and expensive. TurboFeed automates it end-to-end.",
-    "demoVideo": "https://www.loom.com/share/d2ebe8abbda64946bbdbb214b9165b44",
-    "demoEmbedUrl": "https://www.loom.com/embed/d2ebe8abbda64946bbdbb214b9165b44",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/d2ebe8abbda64946bbdbb214b9165b44-54736b75dd415701.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Andres Zepeda",
-        "linkedin": ""
-      }
-    ],
-    "githubRepo": "https://github.com/code-qtzl/TurboFeed-LowVol",
-    "bounties": [
-      "DeepInvent Best Patentable Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "team-asap-video-studio",
-    "name": "Team ASAP - Video Studio",
-    "description": "Video Studio is a tool that turns a handful of property photos into a professional-quality real-estate walkthrough video. The user uploads images, picks a style template (cinematic editorial, coastal twilight), and a classifier auto-assigns each photo to the right slot — exterior, kitchen, living, etc. — then generates the full video unattended. Power users can swap image models (Nano Banana, FLUX, Seedream), video models (Kling 3.0, Seedance 2.0, DepthFlow), skip end frames for cleaner motion, mux their own audio track, and export. Built so homeowners selling modest properties can produce listing-grade video without hiring a videographer or learning prompts.",
-    "demoVideo": "https://www.loom.com/share/8152197740ca43dda49373f8329c2604",
-    "demoEmbedUrl": "https://www.loom.com/embed/8152197740ca43dda49373f8329c2604",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/8152197740ca43dda49373f8329c2604-2d4600cdb69fbe4e.gif",
-    "tracks": [
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Aaron Sanchez",
-        "linkedin": "https://www.linkedin.com/in/aaron-alberto-sanchez/"
-      }
-    ],
-    "githubRepo": "https://github.com/asanch/i2v_templates",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "remuse",
-    "name": "ReMUSE",
-    "description": "Old recordings don't just lose sound - they lose presence. ReMuse is an agentic AI tool that regenerates old music recordings as a virtual modern performance. The ReMused files can then be remixed with the original for an Audio-HDR type of effect, extracting and surfacing more detail while preserving the original feel.",
-    "demoVideo": "https://www.loom.com/share/8caf42c5840f484988ed57c31e5734af",
-    "demoEmbedUrl": "https://www.loom.com/embed/8caf42c5840f484988ed57c31e5734af",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/8caf42c5840f484988ed57c31e5734af-38fdfc6c4a4eeda1.gif",
-    "tracks": [
-      "Agents",
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "MARKO CEKIC",
-        "linkedin": "https://www.linkedin.com/in/markocekic/"
-      },
-      {
-        "name": "REBECCA BURCH",
-        "linkedin": "https://www.linkedin.com/in/rebecca-burch/"
-      }
-    ],
-    "githubRepo": "https://github.com/turboslav-repo/remuse",
-    "bounties": [
-      "DeepInvent Best Patentable Hack",
-      "DeepInvent Top Science Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "deepinsight-deepquery",
-    "name": "DEEPINSIGHT-DEEPQUERY",
-    "description": "DeepQuery turns a messy research question into a trustworthy, evidence-backed report. Eight agents — Planner, Discovery, Extractor, Analyst, Critic, Visualizer, Reporter, plus a File Ingestor — run through a LangGraph pipeline streamed live over Server-Sent Events. The Critic reviews every analysis and triggers a retry if reasoning is flawed; every chart point is clickable back to its exact source quote, sample size, and p-value. Pulls from Semantic Scholar, PubMed, arXiv, and OpenAlex, plus uploaded PDFs and CSVs. Built with FastAPI, LangGraph, React, and TypeScript. Most AI research tools confidently make things up. DeepQuery is built so every number traces back to a real paper.",
-    "demoVideo": "https://www.loom.com/share/a55e507066294587b0e3661cbc891b2c",
-    "demoEmbedUrl": "https://www.loom.com/embed/a55e507066294587b0e3661cbc891b2c",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/a55e507066294587b0e3661cbc891b2c-39ca1abf4b642889.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "AAYUSH RAJ SAH",
-        "linkedin": "https://www.linkedin.com/in/aayush-raj-sah-01b24b364/"
-      },
-      {
-        "name": "ALOK KUMAR THAKUR",
-        "linkedin": "https://www.linkedin.com/in/alokthakur012/"
-      }
-    ],
-    "githubRepo": "https://github.com/aayushraj1425/DeepInsight",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "tab",
-    "name": "Tab",
-    "description": "The spend layer for AI agents.",
-    "demoVideo": "https://www.loom.com/share/d406435ec5514a50832f7b7113e1d0bd",
-    "demoEmbedUrl": "https://www.loom.com/embed/d406435ec5514a50832f7b7113e1d0bd",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/d406435ec5514a50832f7b7113e1d0bd-97a1df9c6353570f.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Suhaas Gaddala",
-        "linkedin": "https://linkedin.com/in/suhaasga/"
-      },
-      {
-        "name": "Pravan Gorthy",
-        "linkedin": "https://linkedin.com/in/pravangorthy/"
-      }
-    ],
-    "githubRepo": "https://github.com/suhaasgaddala/tab",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "realty-ai",
-    "name": "Realty AI",
-    "description": "Reality AI is designed to make interior visualization effortless, emotional, and interactive. Instead of imagining how a room could look, users experience it dynamically through AI-generated motion, atmosphere, and storytelling. With just a few clicks, users can: * Browse and upload interior photos * Choose a visual theme — from cozy fireplaces to futuristic luxury aesthetics * Customize features and ambience * Generate stunning immersive videos that completely transform the original space https://www.youtube.com/watch?v=z_bJWjmmj3s",
-    "demoVideo": "https://www.loom.com/share/2f5fbe53fbf24f5aae3d820a48b19a9f",
-    "demoEmbedUrl": "https://www.loom.com/embed/2f5fbe53fbf24f5aae3d820a48b19a9f",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/2f5fbe53fbf24f5aae3d820a48b19a9f-2fa41e5029078011.gif",
-    "tracks": [
-      "AutoHDR",
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Satish Nekkalapud",
-        "linkedin": "https://www.linkedin.com/in/satishnekkalapudi/"
-      },
-      {
-        "name": "Sandeep Alluru",
-        "linkedin": "https://www.linkedin.com/in/sandeep-alluru/"
-      },
-      {
-        "name": "Meher Gunnam",
-        "linkedin": "https://www.linkedin.com/in/gunnamprakash/"
-      }
-    ],
-    "githubRepo": "https://github.com/bnekkalapudi/realty-ai",
-    "bounties": [
-      "Best use of Miro Bounty"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "agents-haas-waxwing-voice",
-    "name": "AGENTS HAAS - WAXWING VOICE",
-    "description": "Property managers experience two types of problems in their daily operations: first, they waste a lot of time answering repetitive questions about their properties or talking to unqualified leads; second, they miss calls, especially the ones that come after hours (for example, Fiona Calls, Digible’s multifamily call analytics platform, analyzed over 170,000 leasing-office calls and found that 60.8% went unanswered!). The first problem distracts them from completing higher-value tasks that allow them to grow their business, while the second one directly impacts their revenue because every single missed call might result in a lost tenant that would pay them thousands of dollars a month. A solution to these problems would be most helpful to those property management firms that don’t have enough funding to hire an additional or even the first full-time human receptionist. And our solution is Waxwing Voice — a voice agent that can answer calls 24/7, qualify leads and collect information about them, book property showings, and send email notifications. It also has an interactive dashboard in the form of a web application, where property managers can check all the information about each incoming call and call statistics. They can also tweak some voice agent settings (for example, create a custom greeting or choose a different voice) and even connect their Miro account to receive call logs in the form of sticky notes! This simple and user-friendly application directly impacts the financial stability of our property management clients and enables them to feel less frustration and more focus during the day.",
-    "demoVideo": "https://www.loom.com/share/8f7bb9dba41f45faa080905e1a0bd772",
-    "demoEmbedUrl": "https://www.loom.com/embed/8f7bb9dba41f45faa080905e1a0bd772",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/8f7bb9dba41f45faa080905e1a0bd772-6185e7622f5ce428.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Alex Syzov",
-        "linkedin": "https://www.linkedin.com/in/oleksandr-syzov/"
-      },
-      {
-        "name": "Harsha Palapala",
-        "linkedin": "https://www.linkedin.com/in/harsha-palapala/"
-      },
-      {
-        "name": "Akhil Mittapalli",
-        "linkedin": "https://www.linkedin.com/in/akhilmittapalli/"
-      },
-      {
-        "name": "Subbu Kumarappan",
-        "linkedin": "https://www.linkedin.com/in/subbu-kumarappan/"
-      }
-    ],
-    "githubRepo": "https://github.com/waxwingfactor/waxwing-voice-pro",
-    "bounties": [
-      "Best use of Miro Bounty"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "trendsync-brand-factory",
-    "name": "TrendSync Brand Factory",
-    "description": "Problem. Independent and mid-tier fashion brands face three structural disadvantages versus the major houses: trend research costs thousands per seat per year, a single ad campaign needs $20–80k of models, photographers and editors, and tech-pack handoffs to manufacturers are inconsistent — easily delaying sampling by weeks. Who it helps. Small designers, indie labels, and emerging brands who need to ship at the cadence of a major house without the casting, photo, video, or specification teams to back it up. Solution. TrendSync Brand Factory is a single dashboard that compresses concept-to-launch into one afternoon. Web-search-grounded trend intelligence drives a brand-compliant collection plan. A two-step image pipeline produces product photos scored against a deterministic Brand Guardian rulebook. Manufacturer-ready tech packs persist once to the database so PDFs stay consistent across regenerations. An AI-generated model catalog — deliberately diverse across age, body, and ethnicity — lets the user composite a model wearing the product and chain it directly into 8/15/20-second image-to-video ads with audio. A real-time text-and-voice companion (\"Lux\") drives the whole thing through tool-calls. Innovation & Execution. Multi-provider orchestration runs different models for different jobs (reasoning, web-search-grounded retrieval, image edit, image-to-video, realtime audio). A prompt-classifier picks between surgical and global recolor modes from natural-language phrasing. Composite-then-video chains two consecutive AI calls per click. Video aspect ratios auto-detect from the source image. Failure modes are designed-for: 5xx retries, fast-fail on quota, realtime model fallback, image-as-source-of-truth save logic, and provider-aware caching. Impact. Three orders of magnitude of time compression. A photoshoot day plus stylist plus editor plus tech-pack contractor (≈ $25k+, 2–3 weeks) becomes a 90-second pipeline costing single-digit dollars in API calls. Diverse representation is built in. Brand consistency is enforced by math, not vibes.",
-    "demoVideo": "https://www.loom.com/share/734f84c49fb74cd6af6e44996ec33b17",
-    "demoEmbedUrl": "https://www.loom.com/embed/734f84c49fb74cd6af6e44996ec33b17",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/734f84c49fb74cd6af6e44996ec33b17-c50cde3b461fcf49.gif",
-    "tracks": [
-      "Agents",
-      "AutoHDR"
-    ],
-    "attendees": [
-      {
-        "name": "Eimis Pacheco",
-        "linkedin": ""
-      }
-    ],
-    "githubRepo": "https://github.com/EimisPachecoHacks/TrendSync-Brand-Factory-AITX.git",
-    "bounties": [
-      "Best use of Miro Bounty",
-      "DeepInvent Best Patentable Hack"
-    ],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "growth-operator-sdk",
-    "name": "Growth Operator SDK",
-    "description": "Growth Operator is a voice-powered SDK that turns a founder conversation into a reviewed, safety-classified growth program — without ever touching an ad platform. Most AI marketing tools start from campaign objects and optimize for faster platform mutation. Growth Operator starts from the founder: who the buyer is, what the offer is, what proof exists, and what’s still missing. A localhost voice app built on OpenAI Realtime (`gpt-realtime-2`) interviews the founder naturally, routes the conversation through a server-side switchboard with memory-readiness gates, and produces a preview-only growth program. ### What It Does * Converts unstructured founder speech into a normalized `FounderGrowthInput` through a real-time voice interview * Gates conversation modes (`onboarding → campaign planning → creative direction → domain modeling`) based on what the system actually knows so far * Runs preflight readiness checks to surface missing assets, missing configuration, and activation posture before any execution * Generates channel-aware draft actions across Google Ads, Meta Ads, and organic social using SDK capability paths and safety classifications (`read-only`, `local generation`, `external mutation`, `destructive`) * Enforces an explicit safety boundary: the voice layer can capture context and preview plans, but can never mutate external platforms The underlying TypeScript SDK registers 271 agent-facing capabilities governed by a capability registry that classifies every operation by safety class before an agent can act. The onboarding surface is intentionally conservative at the boundary. It can: * improve the draft, * capture strategic context, * queue open questions, * request a local strategy review, * create a preview, * or save locally. It cannot: * enable a campaign, * launch ads, * or spend money. Built with OpenAI Realtime WebRTC, TypeScript, Node.js, and Vitest. Codex was used throughout development for SDK implementation, test coverage, and capability registry generation.",
-    "demoVideo": "https://www.loom.com/share/7718e911d88d4b64bf34fe06ba1dd20f",
-    "demoEmbedUrl": "https://www.loom.com/embed/7718e911d88d4b64bf34fe06ba1dd20f",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/7718e911d88d4b64bf34fe06ba1dd20f-f7c05020b6dca18c.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Shep Bryan –",
-        "linkedin": "https://linkedin.com/in/shepbryan/"
-      }
-    ],
-    "githubRepo": "https://github.com/elsheppo/growth-sdk",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "hackfair-os",
-    "name": "HackFair OS",
-    "description": "Hackathons are usually run through a messy bundle of Discord channels, spreadsheets, QR forms, judging sheets, project galleries, and last-minute announcements. HackFair OS brings those workflows into one event operating system for organizers, builders, attendees, mentors, and judges. The MVP includes a public event hub, project booth pages, Builder Passport profiles, participant discovery, event-aware channels, team workspaces, project submission readiness, QR/project-number voting, badges, mentor queues, judge scorecards, results, and an organizer command center. The core Agents Track surface is the HackFair Ops Agent: a state-derived, approval-gated operator that inspects the current fair, identifies missing submission fields, prepares judge routes, drafts reminder copy, checks QR/poster readiness, and asks for organizer approval before changing event state. HackFair OS helps organizers reduce coordination chaos while giving participants a more connected event experience. Builders can track tasks and submissions, attendees can discover and vote for projects, judges can score consistently, and organizers can see what needs attention before the showcase starts. The current version is honest about its boundaries: seed fallback provides a reliable no-infrastructure demo, Supabase mode is partially implemented for real Auth/database paths, and media uploads, email sending, certificates, storage, realtime chat, and live LLM planning are future work.",
-    "demoVideo": "https://www.loom.com/share/78f5a766e1e4411aab47a10e6def18e1",
-    "demoEmbedUrl": "https://www.loom.com/embed/78f5a766e1e4411aab47a10e6def18e1",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/78f5a766e1e4411aab47a10e6def18e1-bfd237010523fdb0.gif",
-    "tracks": [
-      "Agents"
-    ],
-    "attendees": [
-      {
-        "name": "Eduardo Brambila",
-        "linkedin": "https://www.linkedin.com/in/magospace/"
-      }
-    ],
-    "githubRepo": "https://github.com/magospace/HackFairOS",
-    "bounties": [],
-    "showcaseWorthy": ""
-  },
-  {
-    "id": "austin-311-results-agent",
-    "name": "Austin 311 Results Agent",
-    "description": "ATX 311 Results Agent improves the 311 service Austin already has. It reads the official Austin 311 Public Data result table from the City of Austin open data portal and turns observed service history into resident guidance, staff triage, operational intelligence, and product opportunities.",
-    "demoVideo": "https://www.loom.com/share/bd695917836c48e69cbecd14b33e76bf",
-    "demoEmbedUrl": "https://www.loom.com/embed/bd695917836c48e69cbecd14b33e76bf",
-    "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/bd695917836c48e69cbecd14b33e76bf-d19200f3f9dcac2b.gif",
-    "tracks": [
-      "Open Data",
-      "Agents"
-    ],
-    "attendees": [
       {
         "name": "Michael Rooney",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/michael-rooney01/"
+      },
+      {
+        "name": "Eric Zavesky",
+        "linkedin": "https://www.linkedin.com/in/ezavesky/"
       }
     ],
-    "githubRepo": "https://github.com/vwtnc8v878-spec/austin311",
-    "bounties": [],
+    "githubRepo": "https://github.com/steamfield/stacks, https://github.com/steamfield/stacks-app",
     "showcaseWorthy": ""
   },
   {
-    "id": "kawaiibots",
-    "name": "KawaiiBots",
-    "description": "KawaiiBots is a private, native iOS creator app for turning a trusted personal Cast into kawaii stickers, reaction packs, cards, invites, and short shareable media. The problem is that most AI creative tools are either generic prompt boxes or public social feeds. KawaiiBots focuses on personal expression, consent, privacy, and repeatable character style. Users build a private Cast, choose a style, create manual assets, generate cards and reaction packs, review result packs, and export shareable media. The app includes a SwiftUI iOS/iPadOS interface, typed navigation routes, local mock services, an explicit HTTP debug mode, and a local Fastify backend with validated routes for Cast, moderation, generation, exports, wallet/entitlements, assets, and Agent Mode. Media provider paths are server-only: the backend defaults to mock providers, while fal image/video/background-removal adapters are env-gated and never called directly from iOS. The demo is strongest when framed as a polished creator experience with production-shaped boundaries: consent checks, idempotent backend mutations, safe provider redaction, wallet entitlement scaffolding, and local beta readiness. It is honest about what is not complete yet: durable app-record persistence, production auth, payments, cloud storage, TestFlight signing, and live video generation are not proven in the default local demo.",
-    "demoVideo": "https://www.loom.com/share/9ffc9e33e6a24af5907ac8dc1dfbc8d3",
-    "demoEmbedUrl": "https://www.loom.com/embed/9ffc9e33e6a24af5907ac8dc1dfbc8d3",
+    "id": "promptforce-maya",
+    "name": "Promptforce Maya",
+    "description": "AI coding is haunted by three ghosts: Cost (the bill that keeps growing), Context (the agent that doesn't remember) and Control (the agent that goes rogue). Maya is an AI engineer that plans a build as features, has a team of models build each one in an isolated git worktree, and proves every change on a five-step check (build, vet, tests, full suite, held-out oracle) before it lands. Our Halloween show page draws the build at night, and every ghost on screen is a real event. In our showcase run Maya built an image upscaler for the AutoHDR track in 8 hours: 6 of 6 features proved, 38.29 dB on the test set against 34.69 for the standard method. The page also shows the 4 warnings the build went on past, in red, and all 50 times a person had to step in are logged.",
+    "demoVideo": "https://www.loom.com/share/60bea9b1f8d645fabf79c26e7e9674e6",
+    "demoEmbedUrl": "https://www.loom.com/embed/60bea9b1f8d645fabf79c26e7e9674e6",
     "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/9ffc9e33e6a24af5907ac8dc1dfbc8d3-1b45aa981def98c4.gif",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/60bea9b1f8d645fabf79c26e7e9674e6-f3afda83b5708cec.gif",
     "tracks": [
-      "AutoHDR"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "Eduardo Brambila",
-        "linkedin": "https://www.linkedin.com/in/magospace/"
+        "name": "Kunal Vasavada",
+        "linkedin": "https://linkedin.com/in/kunalvasavada/"
       }
     ],
-    "githubRepo": "https://github.com/magospace/kawaiibots",
-    "bounties": [],
+    "githubRepo": "https://github.com/PromptForcePrime/maya-autobuild-demo",
     "showcaseWorthy": ""
   },
   {
-    "id": "www-buildmygadget-com",
-    "name": "www.buildmygadget.com",
-    "description": "Hi, this is Build My Gadget. Build My Gadget is for anyone who has an idea for a small electronic thing, even if they have never built anything before. Most people can describe what they want, but they do not know how to turn that idea into a real object they can order. Build My Gadget makes that process simple. The person starts with one box and writes what they want. For example: a Mother's Day heart card with lights, USB power, and one button. The app takes that idea and creates a real project workflow. The person can see a 3D preview, try a simple demo of how it works, see the estimated price, and continue to payment. The user does not need to understand electronics, parts, factories, or technical files. They only describe, preview, and order. Behind the scenes, Build My Gadget prepares the details needed so the item can actually be made. The admin can see the production information, cost, shipping, tax, and files needed for the next step. This is why we are submitting under the Agents Track. The app is not just answering with text. It is acting like an agent that helps move a person from an idea to a real buildable gadget workflow. The impact is simple: more people can create useful gifts, tools, toys, and small products without needing engineering experience. Build My Gadget helps turn an idea into something real.",
-    "demoVideo": "https://www.loom.com/share/cb31a28d5dfa44a29847f9ce7880cd1f",
-    "demoEmbedUrl": "https://www.loom.com/embed/cb31a28d5dfa44a29847f9ce7880cd1f",
+    "id": "plans-guru",
+    "name": "Plans Guru",
+    "description": "How many times have you tried to organize a group dinner with 4 or 5 friends, only to end up in a 40-message group chat debate where nobody can agree on a place, someone has a gluten allergy nobody remembered, and someone else only wants cheap eats under $15? Existing apps solve this by harvesting your personal preferences, tracking your location 24/7, and uploading your social graph to cloud servers. We believed there had to be a better way. We built PlansGuru — a privacy-first, 100% on-device AI dinner coordinator. It uses on-device LLMs and local multi-agent negotiation to find group consensus in seconds without a single byte of your preferences ever leaving your phone.",
+    "demoVideo": "https://www.loom.com/share/87b9ec14782d4dee88a46661291b55c1",
+    "demoEmbedUrl": "https://www.loom.com/embed/87b9ec14782d4dee88a46661291b55c1",
     "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/cb31a28d5dfa44a29847f9ce7880cd1f-17f6615341fa6752.gif",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/87b9ec14782d4dee88a46661291b55c1-17673e57dbe90548.gif",
     "tracks": [
-      "Agents"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "Claudio Olmedo",
+        "name": "Shawn David",
+        "linkedin": ""
+      },
+      {
+        "name": "Brian Carrozza",
         "linkedin": ""
       }
     ],
-    "githubRepo": "https://github.com/claudioolmedo/BuildMyGaget",
-    "bounties": [],
+    "githubRepo": "https://github.com/elmstreetshawn/plansguru",
     "showcaseWorthy": ""
   },
   {
-    "id": "boiler-room",
-    "name": "Boiler Room",
-    "description": "Boiler Room is a sales prediction market that pits a user against a team of agents to predict the probability of a sales deal outcome",
-    "demoVideo": "https://www.loom.com/share/5d5cc05c4e12467dad137bf4cba5d434",
-    "demoEmbedUrl": "https://www.loom.com/embed/5d5cc05c4e12467dad137bf4cba5d434",
+    "id": "pixie-so",
+    "name": "Pixie.so",
+    "description": "With Pixie, a business demonstrates a process and gets a tested workflow its agents can run. Pixie is designed to self-heal when systems change and improve through feedback from verified runs, with built-in human-in-the-loop support. Pixie is the API for how a business works, enabling agents to get real business-specific work done across browsers, computers, APIs, and human-in-the-loop workflows.",
+    "demoVideo": "https://www.loom.com/share/2f22e7a4f7df4433a39c9e86857e25fb",
+    "demoEmbedUrl": "https://www.loom.com/embed/2f22e7a4f7df4433a39c9e86857e25fb",
     "demoProvider": "Loom",
-    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/5d5cc05c4e12467dad137bf4cba5d434-c96b43dd2585ad73.gif",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/2f22e7a4f7df4433a39c9e86857e25fb-22a93f2e1bc80fcb.jpg",
     "tracks": [
-      "Agents"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "Joel Lang",
-        "linkedin": ""
+        "name": "Rick Lopez",
+        "linkedin": "https://linkedin.com/in/ricklopez/"
       }
     ],
-    "githubRepo": "https://github.com/priorodds-mesh8/boiler-room-prediction-market",
-    "bounties": [
-      "DeepInvent Best Patentable Hack"
-    ],
+    "githubRepo": "https://github.com/ricklopezio/pixie",
     "showcaseWorthy": ""
   },
   {
-    "id": "samrail",
-    "name": "SamRail",
-    "description": "SamRail is an AI agent platform for government contractors. We turn the daily grind of bid hunting on SAM.gov — pulling solicitations, reading 80-page PDFs, scoring fit against your capabilities, flagging deal-breaker requirements, and drafting action packages — into a single autonomous workflow. Michaela, our orchestrator agent, drives the end-to-end bid analysis: she searches SAM.gov against your company profile, parses attachments, extracts requirements, runs a deterministic fit/reject scorer, surfaces risks, and produces a go/no-go action package with the reasoning trail. A bench of specialist workers (Scot, Lenny, Lance, Gabby, Happer, Roy) handle the sub-tasks behind her. Under the hood it's a capability pack — shared tools, a Supabase-backed data layer, and an HTTP API — that any agent runtime can consume. Small contractors get an analyst-in-a-box; bigger shops get a programmable substrate for their own agents. Built with Next 15, FastAPI, Supabase, and a Hermes-compatible skill layer.",
-    "demoVideo": "https://drive.google.com/file/d/1deQn7OBRKqfEq2_Y8paQDUnmlvuPi9AM/view",
-    "demoEmbedUrl": "https://drive.google.com/file/d/1deQn7OBRKqfEq2_Y8paQDUnmlvuPi9AM/preview",
-    "demoProvider": "Google Drive",
-    "demoThumbnailUrl": "https://drive.google.com/thumbnail?id=1deQn7OBRKqfEq2_Y8paQDUnmlvuPi9AM&sz=w1200",
+    "id": "pinky-promise",
+    "name": "Pinky Promise",
+    "description": "Pinky Promise helps founders find out how they would actually work together before they pinky promise. Co-founder conflict is one of the most common reasons startups fail, and people still choose a partner after a few coffee chats. Pinky Promise looks at how you already work. A command on your laptop reads your git history and your Claude Code or Codex sessions. A ChatGPT or Claude export is read in the browser. If you have neither yet, a twelve-scene founder test gives the same kind of profile. You get a name for how you work, four letters, and the co-founder who would cover you. Invite someone and you both see one pair report: where you fit, where you will clash, and one small thing to try first. A program room suggests who in a cohort should try working together. Pairs are suggestions, never assignments. Your code and your chats stay on your device. You see the summary first, and nothing is saved until you approve it.",
+    "demoVideo": "https://www.loom.com/share/544332bf905b4324b66150c58241b424",
+    "demoEmbedUrl": "https://www.loom.com/embed/544332bf905b4324b66150c58241b424",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/544332bf905b4324b66150c58241b424-60135d769a486224.gif",
     "tracks": [
-      "Agents"
+      "Antler Agents"
     ],
     "attendees": [
       {
-        "name": "Rishi Golla",
-        "linkedin": "https://www.linkedin.com/in/rishi-golla/"
+        "name": "Shawnaya Williams",
+        "linkedin": "https://www.linkedin.com/in/swilliams1927/"
       },
       {
-        "name": "Armaan Amatya",
-        "linkedin": "https://www.linkedin.com/in/armaan-amatya/"
-      },
+        "name": "Zion Van Zandt",
+        "linkedin": "https://www.linkedin.com/in/zion-van-zandt-8231a028a/"
+      }
+    ],
+    "githubRepo": "https://github.com/naya-ai/pinky-promise",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "ocypod",
+    "name": "Ocypod",
+    "description": "Ocypod is your petrochemical supply chain, in your pocket. It's an open-source Monte Carlo simulation of the global ethylene, polyethylene and MEG network: 549 real plants (crackers, coal-to-olefins, PE and MEG), 189 ports and 1,216 shipping, pipeline and rail lanes, all built from public data. The engine is written in kdb+/q and simulates the network day by day across 20 random draws in about 5 seconds per run. You describe a disruption, like a Gulf hurricane, a closed strait or specific plants going offline, and Ocypod shows where the shock travels, which regions and products get hit, how hard and for how long. Bruno, our AI agent, does real analyst work on top of the engine. He finds plants, defines custom scenarios, runs them against a baseline, writes q in a live worksheet, charts the results, stresses a sample trading book and produces an exposure brief you can save as a PDF. A guided demo builds all of that from scratch in under a minute. Ocypod is a scenario engine, not a price forecaster. What we're building is the network and the workflows around it, kept modular so the data and site parameters can be swapped for a company's own",
+    "demoVideo": "https://www.loom.com/share/872ccbb1efd6407692ba6d4c080a269c",
+    "demoEmbedUrl": "https://www.loom.com/embed/872ccbb1efd6407692ba6d4c080a269c",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/872ccbb1efd6407692ba6d4c080a269c-224504617fd3e7cf.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
       {
-        "name": "Aayush Baniya",
-        "linkedin": "https://www.linkedin.com/in/aayush-baniya-a30551223/"
-      },
-      {
-        "name": "Abheek Pradhan",
-        "linkedin": "https://www.linkedin.com/in/abheekpradhan/"
-      },
-      {
-        "name": "Ivan Braenan",
+        "name": "Erwin Pawliczek",
         "linkedin": ""
       }
     ],
-    "githubRepo": "https://github.com/caterpillarC15/govcon",
-    "bounties": [],
+    "githubRepo": "https://github.com/ErwinPawliczek/Ocypod",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "oai-enterprises",
+    "name": "OAI Enterprises",
+    "description": "Scout Offline Proof tests local answers, extraction, and tool decisions under OS-enforced network denial and exports inspectable evidence. It is the first step toward measuring complete workflow outcomes against a shared standard online and offline, then improving configurations based on verified results. This means you get the same results on your daily workflows regardless of whether closed models/harnesses are available as offline tooling can be substituted without degrading output quality.",
+    "demoVideo": "https://www.loom.com/share/ff07234f31e040e8977d9fd6e12c426c",
+    "demoEmbedUrl": "https://www.loom.com/embed/ff07234f31e040e8977d9fd6e12c426c",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/ff07234f31e040e8977d9fd6e12c426c-e9f2559e1c7b64ed.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Jordan Hill",
+        "linkedin": ""
+      }
+    ],
+    "githubRepo": "https://github.com/Organized-AI/scout-offline-proof",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "kestrel",
+    "name": "Kestrel",
+    "description": "As many others are currently feeling, compute is the next bottleneck is agent workflows. Running parallel and always on agents quickly consumes system resources for most people. Current cloud agents do not have a solution to working with visual media. Game development in particular has not been possible thus far on cloud agents, so most people develop locally, this means only a few agents working on the game at a time. Kestrel solves this by giving agents their own desktop. Kestrel allows users to bring the harness they are used to, with ChatGPT and Claude logins, so you aren't stuck with us as token provider. Kestrel has remote streaming straight into the interface, so you can verify the work of your agents from your laptop, or phone, even if its running in a resource heavy game engine. With Kestrel, it is possible to scale agents that feel local, while working from anywhere.",
+    "demoVideo": "https://www.loom.com/share/b90fc21e54f64179b4ee400729c20271",
+    "demoEmbedUrl": "https://www.loom.com/embed/b90fc21e54f64179b4ee400729c20271",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/b90fc21e54f64179b4ee400729c20271-6db9080ffbe3cd3c.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Jaren McHugh",
+        "linkedin": "https://www.linkedin.com/in/jaren-mchugh/"
+      },
+      {
+        "name": "Cayd Berard",
+        "linkedin": "https://www.linkedin.com/in/cayd-berard/"
+      },
+      {
+        "name": "Anish Raj Pandey",
+        "linkedin": "https://www.linkedin.com/in/anishrajpandey/"
+      },
+      {
+        "name": "Antonio Devine",
+        "linkedin": "https://www.linkedin.com/in/antwuann-devinee/"
+      }
+    ],
+    "githubRepo": "https://github.com/jarenm1/kestrel",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "gangnam-style",
+    "name": "Gangnam Style",
+    "description": "townhall.town: Become a more informed voter with agents.",
+    "demoVideo": "https://www.loom.com/share/44c12cfc03aa4b13948bc6a8b5c1a6ed",
+    "demoEmbedUrl": "https://www.loom.com/embed/44c12cfc03aa4b13948bc6a8b5c1a6ed",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/44c12cfc03aa4b13948bc6a8b5c1a6ed-810bf2edf4ed6f2d.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Adam Pangelinan",
+        "linkedin": "https://linkedin.com/in/adamtpang/"
+      },
+      {
+        "name": "Sai Skarri",
+        "linkedin": "https://linkedin.com/in/saikarri/"
+      }
+    ],
+    "githubRepo": "https://github.com/adamtpang/townhall.town",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "devlens",
+    "name": "DevLens",
+    "description": "DevLens is an evidence agent for a consented coding task. It turns one Claude Code session into a replay. A reviewer clicks a claim and sees the recording, the event, the code change, and the test result together. How it works: 1. Claude Code hooks append redacted events to a JSONL file. 2. A deterministic linker adds rule edges (prompted, edited, ran_test, failed, supersedes, verifies). Each edge names its rule and its evidence. 3. A separate sandbox re-run of the test is stored as its own event. It is never merged into the session's own test line. 4. A window recording of the terminal is synced to events by media offset. 5. The Replay page plays the recording. Clicking \"first failed test\" or \"passing test\" seeks the video to that event. 6. Three review questions come from fixed rules with event ids. No model writes them. The page also lists unknowns and what was not captured. The demo uses a real recorded session: the author ran Claude Code on a broken-API task, with consent, and screen recording had audio and camera off. There is also an experimental read-only adapter for T3 Code sessions, plus a recruiter view with a train-line journey of the session. Limits by design: no score, no rank, no hire verdict. Nothing here predicts job performance. DevLens shows evidence so a human can judge. Built with Next.js, TypeScript, Supabase, Vercel, and Claude Code.",
+    "demoVideo": "https://www.loom.com/share/d800368cb6864d3684f8b1b4e26f7a44",
+    "demoEmbedUrl": "https://www.loom.com/embed/d800368cb6864d3684f8b1b4e26f7a44",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/d800368cb6864d3684f8b1b4e26f7a44-288a38f38e376659.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Uma Maheswar Reddy Yeruva",
+        "linkedin": "https://www.linkedin.com/in/umamaheswarreddy-yeruva/"
+      }
+    ],
+    "githubRepo": "https://github.com/yeruvamaheswar/DevLens",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "athlete-stories-x-openhealth",
+    "name": "Athlete Stories x OpenHealth",
+    "description": "As an Athlete, we deserve the ability to relive, review, and share our journeys and progress for all of the effort we put in. The problem today is that even in the age of Agentic AI - our data and the stories and context behind them remain siloed. We have come together to create and explore two platforms that we plan to prototype at the AITX Tech Week Demo Day: 1. Athlete Stories (athletestories.org) - Which agentically integrates Data and then interviews Athletes and their supporters -- in order to produce and a Spotify-wrapped style recap of their story and journey 2. Open Health - Which agentically combines and presents data across an athlete's health and fitness apps and presents it in one comprehensive dashboard - so that every ounce of effort is visible and can be reviewed in the context of where and when it took place -- whether on top of a mountain, in the gym, or on the field",
+    "demoVideo": "https://www.loom.com/share/b2d49cf5fd424deeb3ad3ea94a20e0e5",
+    "demoEmbedUrl": "https://www.loom.com/embed/b2d49cf5fd424deeb3ad3ea94a20e0e5",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/b2d49cf5fd424deeb3ad3ea94a20e0e5-ac6f8803a30dc203.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Kevin Herrera",
+        "linkedin": "https://linkedin.com/in/herrerake/"
+      },
+      {
+        "name": "Will Dahl",
+        "linkedin": "https://linkedin.com/in/willdahl/"
+      }
+    ],
+    "githubRepo": "https://github.com/herrerake/openhealth",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "alani",
+    "name": "ALANI",
+    "description": "Swarmageddon — a consent-first AI vulnerability-scanning swarm Problem. Every web app ships with holes — missing security headers, exposed .git and backup files, injectable inputs — and small teams rarely have the time or a specialist to find them before attackers do. Commercial scanners are slow, noisy with false positives, and opaque about what they actually touched. Who it helps. Indie developers, startup engineers, and security-curious builders who own a site and want a fast, trustworthy read on where it's weak — without hiring a pentester or risking damage to their own app. Solution. Swarmageddon is a consent-first, allowlist-gated swarm of AI agents. Point it at one URL you own; a coordinator locks scope, then specialist agents map the site and probe it in parallel — headers and cookies, exposed paths, and injection — streaming every step to a live dashboard. It is non-destructive by design: it sends tiny confirmation probes to prove a weakness exists, never destructive payloads, and re-verifies every finding against a fresh request before ranking it by severity. A server-side allowlist, a one-button STOP that halts the whole swarm mid-scan, request pacing, and an append-only audit log keep it safe and accountable. Impact. In seconds a developer gets a ranked, de-duplicated report they can act on tomorrow — each finding backed by real evidence and a full audit trail of exactly what was touched. It's a complex multi-agent pipeline, not a single-prompt wrapper: real recon, parallel execution, independent verification, and hard safety rails.",
+    "demoVideo": "https://www.loom.com/share/e6fa4c069d2649f29202575073d50866",
+    "demoEmbedUrl": "https://www.loom.com/embed/e6fa4c069d2649f29202575073d50866",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/e6fa4c069d2649f29202575073d50866-bbaa886819faa4cf.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Andrew Carvajal",
+        "linkedin": ""
+      },
+      {
+        "name": "Erwin Pawliczek",
+        "linkedin": ""
+      }
+    ],
+    "githubRepo": "https://github.com/andrewcar/AITX-ANTLER-Hackathon",
+    "showcaseWorthy": ""
+  },
+  {
+    "id": "ai-car-technician",
+    "name": "AI Car Technician",
+    "description": "Torque turns a $20 OBD-II adapter and a browser tab into an AI car technician. In about 20 seconds it reads your car’s codes and live sensor data, runs its own tests, and explains the problem in plain English for your exact make. You get a step-by-step fix, plus real part numbers, prices and buy links found by live web search.",
+    "demoVideo": "https://www.loom.com/share/5e53e875761a41a0a0362bbbe3b6e930",
+    "demoEmbedUrl": "https://www.loom.com/embed/5e53e875761a41a0a0362bbbe3b6e930",
+    "demoProvider": "Loom",
+    "demoThumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/5e53e875761a41a0a0362bbbe3b6e930-ddd596d414a1a211.gif",
+    "tracks": [
+      "Antler Agents"
+    ],
+    "attendees": [
+      {
+        "name": "Jack Saltel",
+        "linkedin": "https://www.linkedin.com/in/jacksaltel/"
+      },
+      {
+        "name": "Calvin Lamb",
+        "linkedin": "https://www.linkedin.com/in/calvinhg/"
+      },
+      {
+        "name": "Jacob Homanics",
+        "linkedin": "https://www.linkedin.com/in/jacobhomanics/"
+      }
+    ],
+    "githubRepo": "https://github.com/jsaltel/AntlerHacks",
     "showcaseWorthy": ""
   }
 ]

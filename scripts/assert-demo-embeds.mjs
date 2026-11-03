@@ -41,31 +41,32 @@ for (const submission of submissions) {
   }
 }
 
-const clawGods = submissions.find(
-  (submission) => submission.name === "Team ClawGods - ReproLab",
+const paymentIntelligence = submissions.find(
+  (submission) => submission.name === "Payment Intelligence",
 );
-assert.ok(clawGods, "Team ClawGods should be present");
+assert.ok(paymentIntelligence, "Payment Intelligence should be present");
 assert.equal(
-  clawGods.demoVideo,
-  "https://www.loom.com/share/19cc4ebffe9748ad8c4d2d7119fecdbd",
+  paymentIntelligence.demoVideo,
+  "https://www.youtube.com/watch?v=bzPNRtc_JCA",
 );
 assert.equal(
-  clawGods.demoEmbedUrl,
-  "https://www.loom.com/embed/19cc4ebffe9748ad8c4d2d7119fecdbd",
+  paymentIntelligence.demoEmbedUrl,
+  "https://www.youtube.com/embed/bzPNRtc_JCA",
+);
+assert.equal(paymentIntelligence.demoProvider, "YouTube");
+
+const zetaOnes = submissions.filter((submission) => submission.id === "zeta-one");
+assert.equal(zetaOnes.length, 1, "duplicate Zeta One rows should be merged");
+assert.ok(
+  zetaOnes[0].demoVideo.includes("loom.com/share/"),
+  "the merged Zeta One should keep the row with a demo video",
 );
 
-const samRail = submissions.find((submission) => submission.name === "SamRail");
-assert.ok(samRail, "SamRail should be present");
-assert.equal(
-  samRail.demoEmbedUrl,
-  "https://drive.google.com/file/d/1deQn7OBRKqfEq2_Y8paQDUnmlvuPi9AM/preview",
+const cadence = submissions.find(
+  (submission) => submission.name === "L1brary Labs - Cadence on Rho",
 );
-
-const texasCountyBattle = submissions.find(
-  (submission) => submission.name === "Texas County Battle",
-);
-assert.ok(texasCountyBattle, "Texas County Battle should be present");
-assert.equal(texasCountyBattle.demoVideo, "");
-assert.equal(texasCountyBattle.demoEmbedUrl, "");
+assert.ok(cadence, "Cadence on Rho should be present");
+assert.ok(cadence.demoVideo.endsWith(".mp4"), "Cadence keeps its raw mp4 link");
+assert.equal(cadence.demoEmbedUrl, "", "raw mp4 links are not embedded");
 
 console.log("Demo embed check passed.");

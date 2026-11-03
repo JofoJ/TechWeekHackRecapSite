@@ -3,7 +3,7 @@ import { dirname, resolve } from "node:path";
 
 const csvPath = process.env.SUBMISSIONS_CSV
   ? resolve(process.env.SUBMISSIONS_CSV)
-  : "/Users/jakeoshea/Downloads/Submissions-Codex Hackathon.csv";
+  : "/Users/jakeoshea/Downloads/Submissions-MLOps & AITX Tech Week Submissions.csv";
 const outputPath = resolve("src/data/submissions.json");
 
 try {
@@ -14,21 +14,61 @@ try {
   );
   process.exit(0);
 }
+
 const submissionOverrides = new Map([
   [
-    "TEAM NAME = OBJECTS! - PROJECT = OBJECT ORIENTED VIDEOGRAPHY",
+    "ShootAgent",
     {
-      name: "OBJECT ORIENTED VIDEOGRAPHY",
-      demoVideo: "https://www.loom.com/share/ce87f1c0d49241dca709f37fe8c5ad53",
+      // The submitted URL is a redirect page on the team's domain; this is
+      // the Loom it embeds.
+      demoVideo: "https://www.loom.com/share/6a25be5d53fd4257a11cd33498d7630f",
     },
   ],
   [
-    "Texas County Battle",
+    "readyhex.com",
     {
-      demoVideo: "",
+      name: "ReadyHex",
+    },
+  ],
+  [
+    "Promptforce Maya",
+    {
+      // CSV has a misspelled LinkedIn domain that defeats the parser.
+      attendees: [
+        {
+          name: "Kunal Vasavada",
+          linkedin: "https://linkedin.com/in/kunalvasavada/",
+        },
+      ],
+    },
+  ],
+  [
+    "Plans Guru",
+    {
+      // CSV lists emails only.
+      attendees: [
+        { name: "Shawn David", linkedin: "" },
+        { name: "Brian Carrozza", linkedin: "" },
+      ],
+    },
+  ],
+  [
+    "DevLens",
+    {
+      // CSV lists the name as "Yeruva, Uma Maheswar Reddy" across lines.
+      attendees: [
+        {
+          name: "Uma Maheswar Reddy Yeruva",
+          linkedin: "https://www.linkedin.com/in/umamaheswarreddy-yeruva/",
+        },
+      ],
     },
   ],
 ]);
+
+// LinkedIn slugs submitted as jokes/placeholders; linking them would point at
+// unrelated profiles.
+const LINKEDIN_SLUG_BLOCKLIST = new Set(["a16z", "open-ai", "openai"]);
 
 function parseCsv(input) {
   const rows = [];
@@ -84,8 +124,8 @@ function splitList(value) {
 
 function normalizeTrack(track) {
   if (/autohdr/i.test(track)) return "AutoHDR";
-  if (/open data|brainforge|vicinity/i.test(track)) return "Open Data";
-  if (/agents/i.test(track)) return "Agents";
+  if (/rho|fintech/i.test(track)) return "Rho Fintech";
+  if (/antler|agents/i.test(track)) return "Antler Agents";
   return track.replace(/\s*Track$/i, "").trim();
 }
 
@@ -109,6 +149,18 @@ function cleanText(value) {
     .trim();
 }
 
+// Some teams pasted markdown READMEs as their description; flatten the
+// syntax so cards read as prose.
+function cleanDescription(value) {
+  return cleanText(
+    String(value || "")
+      .replace(/^#{1,6}\s+/gm, "")
+      .replace(/\*\*([^*]+)\*\*/g, "$1")
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")
+      .replace(/`([^`]+)`/g, "$1"),
+  );
+}
+
 function slugify(value) {
   return cleanText(value)
     .toLowerCase()
@@ -120,7 +172,18 @@ function normalizeDemoVideo(value) {
   const url = cleanText(value);
   const loomMatch = url.match(/loom\.com\/(?:share|edit)\/([a-zA-Z0-9]+)/);
   if (loomMatch) return `https://www.loom.com/share/${loomMatch[1]}`;
+  const youtubeId = youtubeVideoId(url);
+  if (youtubeId) return `https://www.youtube.com/watch?v=${youtubeId}`;
+  if (/^tba$/i.test(url)) return "";
   return url;
+}
+
+function youtubeVideoId(value) {
+  return (
+    cleanText(value).match(
+      /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([a-zA-Z0-9_-]{6,})/,
+    )?.[1] ?? ""
+  );
 }
 
 function demoEmbedUrl(value) {
@@ -130,6 +193,9 @@ function demoEmbedUrl(value) {
 
   const driveMatch = url.match(/drive\.google\.com\/file\/d\/([^/]+)/);
   if (driveMatch) return `https://drive.google.com/file/d/${driveMatch[1]}/preview`;
+
+  const youtubeId = youtubeVideoId(url);
+  if (youtubeId) return `https://www.youtube.com/embed/${youtubeId}`;
 
   return "";
 }
@@ -178,6 +244,14 @@ async function demoMetadata(value) {
     };
   }
 
+  const youtubeId = youtubeVideoId(url);
+  if (youtubeId) {
+    return {
+      demoProvider: "YouTube",
+      demoThumbnailUrl: `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
+    };
+  }
+
   return {
     demoProvider: "",
     demoThumbnailUrl: "",
@@ -189,12 +263,22 @@ function normalizeLinkedinUrl(value) {
   if (!trimmed || /no linkedin/i.test(trimmed)) return "";
   const withoutProtocol = trimmed.replace(/^https?:\/\//i, "");
   if (!/^((www\.)?linkedin\.com\/in\/)/i.test(withoutProtocol)) return "";
+  const slug = withoutProtocol
+    .replace(/^(www\.)?linkedin\.com\/in\//i, "")
+    .replace(/\/.*$/, "")
+    .toLowerCase();
+  if (LINKEDIN_SLUG_BLOCKLIST.has(slug)) return "";
   return `https://${withoutProtocol}`.replace(/\/?$/, "/");
 }
 
+const NOISE_NAME = /^(linkedin|email|github|twitter|x)\b[:\s]*$/i;
+
 function parseAttendees(value) {
-  return String(value || "")
-    .split(/(?=\b\d+\)\s)|\n+/)
+  const parsed = String(value || "")
+    // Emails never belong on the public site; stripping them first also lets
+    // "Name email@example.com" lines parse to just the name.
+    .replace(/\S+@\S+/g, "")
+    .split(/(?=\b\d+[.)]\s)|\n+/)
     .map((line) => line.trim())
     .filter(Boolean)
     .map((line) => {
@@ -203,23 +287,43 @@ function parseAttendees(value) {
       );
       const linkedin = linkedinMatch ? normalizeLinkedinUrl(linkedinMatch[0]) : "";
       const beforeLinkedin = linkedinMatch ? line.slice(0, linkedinMatch.index) : line;
-      const withoutNumber = beforeLinkedin.replace(/^\s*\d+\)\s*/, "");
+      const withoutNumber = beforeLinkedin.replace(/^\s*\d+[.)]\s*/, "");
       const withoutBracket = withoutNumber.replace(/^\[|\]$/g, "");
       const name = withoutBracket
-        .split(/\s+-\s+|,\s*/)
+        .split(/\s+[-—–]\s+|\s*\|\s*|,\s*/)
         .map((part) => part.trim())
         .find((part) => part && !part.includes("@") && !/^https?:/i.test(part));
 
       return {
-        name: cleanText(name || withoutBracket).replace(/[-,]+$/g, "").trim(),
+        name: cleanText(name || withoutBracket)
+          .replace(/[-—–|,]+$/g, "")
+          .trim(),
         linkedin,
       };
-    })
-    .filter((attendee) => attendee.name && !attendee.name.includes("@"));
+    });
+
+  // Lines like "LinkedIn: https://..." or a bare profile URL belong to the
+  // attendee named on the previous line.
+  const attendees = [];
+  for (const entry of parsed) {
+    const isNoise = !entry.name || NOISE_NAME.test(entry.name);
+    if (isNoise) {
+      const previous = attendees[attendees.length - 1];
+      if (entry.linkedin && previous && !previous.linkedin) {
+        previous.linkedin = entry.linkedin;
+      }
+      continue;
+    }
+    attendees.push(entry);
+  }
+
+  return attendees.filter(
+    (attendee) => attendee.name && !attendee.name.includes("@"),
+  );
 }
 
 const raw = await readFile(csvPath, "utf8");
-const rows = parseCsv(raw.replace(/^\uFEFF/, "")).filter((row) =>
+const rows = parseCsv(raw.replace(/^﻿/, "")).filter((row) =>
   row.some((cell) => cell.trim()),
 );
 const headers = rows[0].map((header) => header.trim());
@@ -230,31 +334,46 @@ const records = rows.slice(1).map((row) =>
 const submissions = (
   await Promise.all(
     records.map(async (row, index) => {
-    const rawName = cleanText(row["Submission Name"]);
-    const override = submissionOverrides.get(rawName);
-    const name = override?.name ?? rawName;
-    const demoVideo = normalizeDemoVideo(override?.demoVideo ?? row["Demo Video"]);
-    const metadata = await demoMetadata(demoVideo);
-    const tracks = splitList(row.Tracks || "").map(normalizeTrack);
-    const bounties = splitList(row.Bounties || "");
+      const rawName = cleanText(row["Submission Name"]);
+      const override = submissionOverrides.get(rawName);
+      const name = override?.name ?? rawName;
+      const demoVideo = normalizeDemoVideo(override?.demoVideo ?? row["Demo Video"]);
+      const metadata = await demoMetadata(demoVideo);
+      const tracks = splitList(row.Tracks || "").map(normalizeTrack);
 
-    return {
-      id: slugify(name || `submission-${index + 1}`),
-      name: name || `Submission ${index + 1}`,
-      description: cleanText(row["Submission Description"]),
-      demoVideo,
-      demoEmbedUrl: demoEmbedUrl(demoVideo),
-      ...metadata,
-      tracks: Array.from(new Set(tracks)).filter(Boolean),
-      attendees: parseAttendees(row["List Team Members"]),
-      githubRepo: cleanText(row["Github Repo"]),
-      bounties,
-      showcaseWorthy: cleanText(row["Showcase worthy?"]),
-    };
+      return {
+        id: slugify(name || `submission-${index + 1}`),
+        name: name || `Submission ${index + 1}`,
+        description: cleanDescription(row["Submission Description"]),
+        demoVideo,
+        demoEmbedUrl: demoEmbedUrl(demoVideo),
+        ...metadata,
+        tracks: Array.from(new Set(tracks)).filter(Boolean),
+        attendees: override?.attendees ?? parseAttendees(row["List Team Members"]),
+        githubRepo: cleanText(row["Github Repo"]),
+        showcaseWorthy: cleanText(row["Showcase worthy?"]),
+      };
     }),
   )
 ).filter((submission) => submission.name && submission.description);
 
+// The export can contain duplicate rows for the same project (e.g. Zeta One
+// was submitted twice). Keep one entry per slug, preferring the row that has
+// a working demo video.
+const bySlug = new Map();
+for (const submission of submissions) {
+  const existing = bySlug.get(submission.id);
+  if (!existing) {
+    bySlug.set(submission.id, submission);
+    continue;
+  }
+  console.log(`prepare-data: merged duplicate submission "${submission.name}"`);
+  if (!existing.demoVideo && submission.demoVideo) {
+    bySlug.set(submission.id, submission);
+  }
+}
+const deduped = Array.from(bySlug.values());
+
 await mkdir(dirname(outputPath), { recursive: true });
-await writeFile(outputPath, `${JSON.stringify(submissions, null, 2)}\n`);
-console.log(`Wrote ${submissions.length} submissions to ${outputPath}`);
+await writeFile(outputPath, `${JSON.stringify(deduped, null, 2)}\n`);
+console.log(`Wrote ${deduped.length} submissions to ${outputPath}`);

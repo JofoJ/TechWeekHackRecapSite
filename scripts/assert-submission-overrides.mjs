@@ -6,27 +6,21 @@ const submissions = JSON.parse(
   await readFile(resolve("src/data/submissions.json"), "utf8"),
 );
 
-const objectVideography = submissions.find(
-  (submission) => submission.name === "OBJECT ORIENTED VIDEOGRAPHY",
+const shootAgent = submissions.find((submission) => submission.name === "ShootAgent");
+
+assert.ok(shootAgent, "ShootAgent should be present");
+assert.equal(
+  shootAgent.demoVideo,
+  "https://www.loom.com/share/6a25be5d53fd4257a11cd33498d7630f",
+  "ShootAgent's redirect-page demo URL should be overridden with its Loom",
+);
+assert.equal(
+  shootAgent.demoEmbedUrl,
+  "https://www.loom.com/embed/6a25be5d53fd4257a11cd33498d7630f",
 );
 
-assert.ok(objectVideography, "OBJECT ORIENTED VIDEOGRAPHY should be present");
-assert.equal(
-  objectVideography.demoVideo,
-  "https://www.loom.com/share/ce87f1c0d49241dca709f37fe8c5ad53",
-);
-assert.equal(
-  objectVideography.demoEmbedUrl,
-  "https://www.loom.com/embed/ce87f1c0d49241dca709f37fe8c5ad53",
-);
-assert.match(
-  objectVideography.demoThumbnailUrl,
-  /^https:\/\/cdn\.loom\.com\/sessions\/thumbnails\/ce87f1c0d49241dca709f37fe8c5ad53-/,
-);
-assert.equal(
-  objectVideography.id,
-  "object-oriented-videography",
-  "renamed build should get a matching anchor id",
-);
+const readyHex = submissions.find((submission) => submission.name === "ReadyHex");
+assert.ok(readyHex, "ReadyHex should be renamed from readyhex.com");
+assert.equal(readyHex.id, "readyhex", "renamed build should get a matching anchor id");
 
 console.log("Submission override check passed.");
