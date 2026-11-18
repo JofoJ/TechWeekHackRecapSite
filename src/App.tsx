@@ -212,6 +212,14 @@ function App() {
             </div>
           </div>
 
+          <div className="hero-embed">
+            <iframe
+              src="https://www.youtube.com/embed/zawfiyvIaqU"
+              title="AITX & MLOps World Tech Week Hackathon recap video"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
         </div>
       </section>
 
